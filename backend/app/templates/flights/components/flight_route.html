@@ -1,0 +1,38 @@
+{% macro render_flight_route(flight, class="") %}
+<div class="text-center {{class}}">
+    <div class="w-100 h-100 d-flex align-items-center justify-content-between">
+        <div class="d-flex flex-column align-items-center">
+            <p class="mb-2">{{flight.depart_time.strftime("%H:%M")}}</p>
+            <p class="mb-2" title="{{flight.route.depart_airport}}">
+            {{flight.route.depart_airport.code}}
+            </p>
+            <small class="mb-0">{{flight.depart_time.strftime("%d/%m/%Y")}}</small>
+        </div>
+        <div class="d-flex align-items-center flex-grow-1">
+            <div class="dotted-underline"></div>
+            <!--  -->
+            <!--  -->
+            {% if not flight.stopovers %}
+            <small>nonstop</small>
+            {% elif flight.stopovers |length == 1 %}
+            <small title="{{flight.stopovers[0].airport}}"
+            >{{flight.stopovers[0].airport.code}}</small
+            >
+            {% else %}
+            <small>{{flight.stopovers |length}} stops</small>
+            {% endif %}
+            <!--  -->
+            <!--  -->
+            <div class="dotted-underline"></div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center">
+            <p class="mb-2">{{flight.arrive_time.strftime('%H:%M')}}</p>
+            <p class="mb-2" title="{{flight.route.arrive_airport}}">
+            {{flight.route.arrive_airport.code}}
+            </p>
+            <small class="mb-0">{{flight.arrive_time.strftime("%d/%m/%Y")}}</small>
+        </div>
+    </div>
+</div>
+{% endmacro %}

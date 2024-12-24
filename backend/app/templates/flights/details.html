@@ -1,0 +1,63 @@
+{% from "flights/components/price_part.html" import price_part with context %}
+
+
+{% extends "layouts/base.html" %} {% block content %}
+<div class="container mt-5 min-vh-100">
+    <h3>{{flight.route.depart_airport}} → {{flight.route.arrive_airport}}</h2>
+    <div class="row">
+        <div class="col-md-7">
+            <div class="my-3">
+                <h5><i class="fa-solid fa-fingerprint me-1"></i>Flight ID: {{flight.id}}</h5>
+                <h5 class=""><i class="fa-solid fa-plane-departure me-1"></i>Departs on: {{flight.depart_time.strftime('%d/%m/%Y - %H:%M')}}</h5>
+                <h5 class=""><i class="fa-solid fa-plane-arrival me-1"></i>Arrives on: {{flight.arrive_time.strftime('%d/%m/%Y - %H:%M')}}</h5>
+                <h5 class=""><i class="fa-solid fa-clock me-1"></i>Total duration: {{(flight.arrive_time - flight.depart_time)}}</h5>
+            </div>
+            <hr>
+            <div class="" style="width: fit-content;">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa-solid fa-plane-departure me-3 fs-4"></i>
+                    <div class="">
+                        <div>{{flight.route.depart_airport}}</div>
+                        <div>Depart: {{flight.depart_time.strftime('%d/%m/%Y - %H:%M')}}</div>
+                    </div>
+                </div>
+                {% set previous_departure_time = namespace(value = flight.depart_time) %}
+                {% for stop in flight.stopovers|sort(attribute='order') %}
+                    <div class="d-flex justify-content-center" style="line-height: 3;;">
+                        <div class="vr me-3"></div>
+                        <div><i class="fa-solid fa-stopwatch me-1"></i>Duration: {{stop.arrival_time - previous_departure_time.value}}</div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                        <i class="fa-solid fa-flag me-3 fs-4"></i>
+                        <div class="">
+                            <div>{{stop.airport}}</div>
+                            <div><i class="fa-solid fa-plane-arrival me-1"></i>Arrive: {{stop.arrival_time.strftime('%d/%m/%Y - %H:%M')}}</div>
+                            <div><i class="fa-solid fa-pause me-3"></i>Stop for: {{stop.departure_time - stop.arrival_time}}</div>
+                            <div><i class="fa-solid fa-plane-departure me-1"></i>Depart: {{stop.departure_time.strftime('%d/%m/%Y - %H:%M')}}</div>
+                        </div>
+                    </div>
+                    {% set previous_departure_time.value = stop.departure_time %}
+                {% endfor %}
+                <div class="d-flex justify-content-center" style="line-height: 3;;">
+                    <div class="vr me-3"></div>
+                    <div><i class="fa-solid fa-stopwatch me-1"></i>Duration: {{flight.arrive_time - previous_departure_time.value}}</div>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fa-solid fa-plane-arrival me-3 fs-4"></i>
+                    <div class="">
+                        <div>{{flight.route.arrive_airport}}</div>
+                        <div>Arrive: {{flight.arrive_time.strftime('%d/%m/%Y - %H:%M')}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <div class="col-md-5 d-flex mb-3 mb-md-0 mt-3 flex-wrap align-content-start">
+            {{ price_part(endpoint='bookings.reserve_ticket',flight=flight.id) }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

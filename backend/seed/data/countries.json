@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "name": "Australia",
+    "CountryCode": "AU"
+  },
+  {
+    "id": 2,
+    "name": "Austria",
+    "CountryCode": "AT"
+  },
+  {
+    "id": 3,
+    "name": "Belgium",
+    "CountryCode": "BE"
+  },
+  {
+    "id": 4,
+    "name": "Cambodia",
+    "CountryCode": "KH"
+  },
+  {
+    "id": 5,
+    "name": "Canada",
+    "CountryCode": "CA"
+  },
+  {
+    "id": 6,
+    "name": "China",
+    "CountryCode": "CN"
+  },
+  {
+    "id": 7,
+    "name": "Czech Republic",
+    "CountryCode": "CZ"
+  },
+  {
+    "id": 8,
+    "name": "Denmark",
+    "CountryCode": "DK"
+  },
+  {
+    "id": 9,
+    "name": "France",
+    "CountryCode": "FR"
+  },
+  {
+    "id": 10,
+    "name": "Germany",
+    "CountryCode": "DE"
+  },
+  {
+    "id": 11,
+    "name": "Hong Kong, China",
+    "CountryCode": "HK"
+  },
+  {
+    "id": 12,
+    "name": "Indonesia",
+    "CountryCode": "ID"
+  },
+  {
+    "id": 13,
+    "name": "Italy",
+    "CountryCode": "IT"
+  },
+  {
+    "id": 14,
+    "name": "Japan",
+    "CountryCode": "JP"
+  },
+  {
+    "id": 15,
+    "name": "Korea",
+    "CountryCode": "KR"
+  },
+  {
+    "id": 16,
+    "name": "Laos",
+    "CountryCode": "LA"
+  },
+  {
+    "id": 17,
+    "name": "Macau, China",
+    "CountryCode": "MO"
+  },
+  {
+    "id": 18,
+    "name": "Malaysia",
+    "CountryCode": "MY"
+  },
+  {
+    "id": 19,
+    "name": "Myanmar",
+    "CountryCode": "MM"
+  },
+  {
+    "id": 20,
+    "name": "Netherlands",
+    "CountryCode": "NL"
+  },
+  {
+    "id": 21,
+    "name": "Norway",
+    "CountryCode": "NO"
+  },
+  {
+    "id": 22,
+    "name": "Philippines",
+    "CountryCode": "PH"
+  },
+  {
+    "id": 23,
+    "name": "Russia",
+    "CountryCode": "RU"
+  },
+  {
+    "id": 24,
+    "name": "Singapore",
+    "CountryCode": "SG"
+  },
+  {
+    "id": 25,
+    "name": "Spain",
+    "CountryCode": "ES"
+  },
+  {
+    "id": 26,
+    "name": "Switzerland",
+    "CountryCode": "CH"
+  },
+  {
+    "id": 27,
+    "name": "Sweden",
+    "CountryCode": "SE"
+  },
+  {
+    "id": 28,
+    "name": "Taiwan",
+    "CountryCode": "TW"
+  },
+  {
+    "id": 29,
+    "name": "Thailand",
+    "CountryCode": "TH"
+  },
+  {
+    "id": 30,
+    "name": "United Kingdom",
+    "CountryCode": "GB"
+  },
+  {
+    "id": 31,
+    "name": "United States of America",
+    "CountryCode": "US"
+  },
+  {
+    "id": 32,
+    "name": "Vietnam",
+    "CountryCode": "VN"
+  },
+  {
+    "id": 33,
+    "name": "Global",
+    "CountryCode": "NZ"
+  }
+]

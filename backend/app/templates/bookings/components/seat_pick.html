@@ -1,0 +1,37 @@
+{% macro render_seat_pick(flight_seats, seat_class, class="") %}
+<div class="shadow card {{class}}">
+    <div class="card-header mb-2">
+        <p class="text-center m-0">Choose seat</p>
+    </div>
+    <div class="row card-body">
+        {% for seat in flight_seats %}
+            {% if seat.aircraft_seat.seat_class == seat_class %}
+                {% if seat.is_sold() %}
+                    <div class="col-6 col-md-4 mb-3 d-flex justify-content-center">
+                        <input type="radio" class="btn-check" name="btnradio" id="{{seat.id}}" required autocomplete="off" disabled>
+                        <label class="btn btn-secondary" for="{{seat.id}}">{{ seat.aircraft_seat.seat_name }}</label>
+                    </div>
+                {% else %}
+                    <div class="col-6 col-md-4 mb-3 d-flex justify-content-center">
+                        <input type="radio" class="btn-check" name="flight_seat_id" id="{{seat.id}}" required autocomplete="off" value="{{seat.id}}" 
+                        onclick="selectSeat('{{seat.aircraft_seat.seat_name}}', '{{ "{:,}".format(seat.price) }}','{{seat.currency}}')">
+                        <label class="btn btn-outline-success" for="{{seat.id}}">{{ seat.aircraft_seat.seat_name }}</label>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    
+<script>
+    function selectSeat(seatName, seatPrice, currency) {
+        // Cập nhật thông tin ghế đã chọn
+        document.querySelector('.selected_seat_info').innerHTML = `
+            <div>
+                <span><b>Seat: </b>${seatName}</span>
+            </div>
+            <div><span><b>Price: </b>${seatPrice} ${currency}</span></div>
+        `;
+    }
+</script>
+</div>
+{% endmacro %}

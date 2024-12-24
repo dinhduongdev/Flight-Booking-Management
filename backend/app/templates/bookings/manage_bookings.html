@@ -1,0 +1,47 @@
+{% from "layouts/pagination.html" import render_pagination with context %}
+{% from "bookings/components/reservation_card.html" import render_reservation_card with context %}
+
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container mt-5 min-vh-100">
+    <h2>Manage bookings</h2>
+    <ul class="nav nav-tabs manage-booking-tabs">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{url_for('bookings.manage_own_bookings')}}">Own Bookings</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{url_for('bookings.manage_bookings_created_for_others')}}">Created For Others</a>
+        </li>
+    </ul>
+    <div class="reservation-results mt-3">
+        {% if page.items %}
+            {% for reservation in page.items %}
+                {{ render_reservation_card(reservation, class='mb-2') }}
+            {% endfor %}
+        
+            {{ render_pagination(page, 'bookings.manage_own_bookings') }}
+        {% else %}
+        <div class="d-flex flex-column justify-content-center w-100">
+            <div class="text-center fs-4 p-5">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p class="text-muted">There's nothing in here yet.</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<!-- Check url to active corresponding tab -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const url = window.location.href;
+        const tabs = document.querySelectorAll('.manage-booking-tabs .nav-link');
+        tabs.forEach(tab => {
+            if (url.includes(tab.href)) {
+                tab.classList.add('active');
+            }
+        });
+    });
+</script>
+{% endblock scripts %}

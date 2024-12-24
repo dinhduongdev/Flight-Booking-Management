@@ -1,0 +1,42 @@
+{% from "flights/components/price_part.html" import price_part with context %}
+{% from "bookings/components/seat_pick.html" import render_seat_pick %}
+{% from "layouts/field.html" import render_field %}
+
+{% macro render_reservation_form(flight, seat_class) %}
+<form method="POST" action="" class="row my-5">
+    {{ form.hidden_tag() }}
+    <!-- Sơ đồ ghế -->
+    <div class="d-flex flex-column col-sm-4 col-12">
+        {{ render_seat_pick(flight.seats, seat_class) }}
+        <div class="card mt-3 overflow-hidden">
+            <div class="card-header text-center">Classes</div>
+            <div class="card-body d-flex flex-wrap p-0">{{price_part(endpoint='bookings.reserve_ticket',flight=flight.id)}}</div>
+        </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <div class="col-sm-8 col-12">
+        <div class="shadow card mt-sm-0 mt-3">
+            <div class="card-header">
+                <div><b>Flight ID: </b>{{flight.id}}</div>
+                <div><b>From:</b> {{ flight.route.depart_airport }}</div>
+                <div><b>To:</b> {{ flight.route.arrive_airport }}</div>
+                <div><b>Depart time:</b> {{ flight.depart_time.strftime('%d/%m/%Y - %H:%M') }}</div>
+                <div><b>Arrive time:</b> {{ flight.arrive_time.strftime('%d/%m/%Y - %H:%M') }}</div>
+                <div class="selected_seat_info"></div>
+            </div>
+
+            <div class="card-body">
+                {{ render_field(form.citizen_id) }}
+            </div>
+            
+            <!-- Nút xác nhận đặt vé -->
+            <div class="card-footer">
+                {{ form.submit(class="btn btn-primary") }}
+                <a href="{{url_for('flights.searchFlights')}}" class="btn btn-primary-invert">Cancel</a>
+            </div>
+        </div>
+    </div>
+</form>
+{% endmacro %}

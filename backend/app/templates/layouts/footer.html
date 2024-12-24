@@ -1,1 +1,96 @@
-<footer><!-- Footer --></footer>
+<footer class="bg-dark text-light py-4">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Logo and Social Media -->
+      <div
+        class="col-md-3 d-flex flex-column align-items-center align-items-md-start mb-3"
+      >
+        <a class="navbar-brand col-8 mx-auto" href="{{url_for('main.home')}}">
+          <img
+            class="col-12"
+            src="{{url_for('static',filename='images/iconLight.svg')}}"
+            alt=""
+          />
+        </a>
+        <div class="mt-3 d-flex gap-2 mx-auto">
+          <div class="social">
+            <a href="#" class="text-light"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="social">
+            <a href="#" class="text-light"><i class="fab fa-facebook"></i></a>
+          </div>
+          <div class="social">
+            <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Links -->
+      <div class="col-md-3">
+        <h6>Product</h6>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="text-secondary text-decoration-none">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Special Offers</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Help Links -->
+      <div class="col-md-3">
+        <h6>Help</h6>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#" class="text-secondary text-decoration-none">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Help Center</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-secondary text-decoration-none"
+              >Privacy Policy</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Airlines -->
+      <div
+        class="col-md-3 d-flex flex-column align-items-center align-items-md-start"
+      >
+        <h6>Airlines</h6>
+        <div class="d-flex flex-column align-items-center align-items-md-start">
+          <img
+            src="{{url_for('static',filename='images/trademark/trademark3.png')}}"
+            alt="Vietnam Airlines"
+            class="mb-3"
+            style="width: 250px"
+          />
+          <img
+            src="{{url_for('static',filename='images/trademark/trademark2.png')}}"
+            class="mb-3"
+            style="width: 200px"
+          />
+          <img
+            src="{{url_for('static',filename='images/trademark/trademark1.png')}}"
+            alt="VASCO"
+            style="width: 150px"
+          />
+        </div>
+      </div>
+    </div>
+    <hr class="text-light custom-hr" />
+    <!-- Footer Bottom -->
+    <div class="text-center">
+      <a href="#" class="text-light text-decoration-none me-3">Terms</a>
+      <a href="#" class="text-light text-decoration-none me-3">Privacy</a>
+      <a href="#" class="text-light text-decoration-none">Cookies</a>
+    </div>
+  </div>
+</footer>

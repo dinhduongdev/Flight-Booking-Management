@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "depart_airport_id": 3,
+        "arrive_airport_id": 2
+    },
+    {
+        "id": 2,
+        "depart_airport_id": 1,
+        "arrive_airport_id": 3
+    },
+    {
+        "id": 3,
+        "depart_airport_id": 1,
+        "arrive_airport_id": 2
+    },
+    {
+        "id": 4,
+        "depart_airport_id": 1,
+        "arrive_airport_id": 8
+    },
+    {
+        "id": 5,
+        "depart_airport_id": 2,
+        "arrive_airport_id": 4
+    },
+    {
+        "id": 6,
+        "depart_airport_id": 2,
+        "arrive_airport_id": 3
+    },
+    {
+        "id": 7,
+        "depart_airport_id": 2,
+        "arrive_airport_id": 1
+    }
+]

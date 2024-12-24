@@ -1,0 +1,45 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-nav li a {
+  color: white !important;
+  /* font-size: smaller; */
+  letter-spacing: -0.5px;
+}
+
+.navbar-nav li {
+  transition: 0.2s;
+  line-height: 1;
+}
+.navbar-nav li:not(.active):hover {
+  background-color: #3e454d;
+}
+
+.navbar-nav li.active {
+  background-color: dodgerblue;
+}
+
+.select2-container.form-control {
+  width: 100% !important;
+}
+
+.select2-choices {
+  overflow: auto !important;
+  max-height: 300px !important;
+}
+
+.invalid-feedback > ul {
+  color: red !important;
+}
+
+.table td,
+.table th {
+  padding: 0.2rem;
+}
+
+table input[type="checkbox"] {
+  zoom: 1.8;
+}

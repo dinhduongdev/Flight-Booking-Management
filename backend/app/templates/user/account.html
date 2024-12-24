@@ -1,0 +1,23 @@
+{% extends "layouts/base.html" %} {% block content %}
+<div class="container vh-100 mt-5">
+  <div class="row">
+    <!--left col-->
+    <div class="col-md-5">
+      <div class="card mb-2">
+        <div class="card-body text-center">
+          <img
+            src="{{current_user.avatar}}"
+            alt="avatar"
+            class="col-5 col-md-6 avatar-circle shadow"
+          />
+          <h5 class="my-3">{{ current_user.email }}</h5>
+          <p class="mb-4 text-uppercase fst-italic">{{current_user.role}}</p>
+          {% block avatar_col %}{% endblock avatar_col %}
+        </div>
+      </div>
+    </div>
+    <!--right col-->
+    <div class="col-md-7">{% block main_col %}{% endblock main_col %}</div>
+  </div>
+</div>
+{% endblock content %}

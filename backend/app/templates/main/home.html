@@ -1,3 +1,363 @@
 {% extends "layouts/base.html" %} {% block content %}
-<h1>This is Home</h1>
-{% endblock content %}
+<div class="slider-layout">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <div class="slider-content-container">
+          <img
+            src="{{ url_for('static', filename='images/slider1.png') }}"
+            alt="Slider Image"
+            class="img-fluid"
+          />
+          <div class="content">
+            <h1>Embark on your journey to secure the ideal getaway.</h1>
+            <p>
+              Tempora facere doloribus id aut. Ea maiores esse accusantium
+              laboriosam. Quos commodi non assumenda quam illum. Id omnis saepe
+              corrupti incidunt qui sed delectus. Eaque minus ducimus ut ratione
+              iste quod commodi et.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <div class="slider-content-container">
+          <img
+            src="{{ url_for('static', filename='images/slider2.png') }}"
+            alt="Slider Image"
+            class="img-fluid"
+          />
+          <div class="content">
+            <h1>Effortless Booking at Your Fingertips.</h1>
+            <p>
+              London to Paris are 6 hours drive but we do it in 1 and a half.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-find">
+    <div class="logo-find">
+      <button class="btn btn-primary d-flex align-items-center">
+        <img
+          src="{{ url_for('static', filename='images/vector.png') }}"
+          alt="Icon"
+          style="width: 30px; margin-right: 8px"
+        />
+        Buy Tickets
+      </button>
+    </div>
+    {% include "layouts/find.html" %}
+  </div>
+</div>
+
+<section class="why-choose-us py-5 fade-left">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <!-- Image and Card -->
+      <div class="col-md-6">
+        <div class="card-main">
+          <img
+            src="{{url_for('static',filename='images/whychooseus1.png')}}"
+            alt="Hotel"
+            class="image-background rounded-3"
+          />
+          <div class="card card-sub">
+            <img
+              src="{{url_for('static',filename='images/whychooseus2.png')}}"
+              alt="Hotel"
+              class="rounded-3"
+            />
+            <div class="">
+              <div class="row d-flex justify-content-between">
+                <p class="col-6">VietNam</p>
+                <p class="col-6 text-end">⭐ 4.92</p>
+              </div>
+              <p class="text-sub">
+                Voluptatibus nemo amet voluptatem quia ipsa eum. Est ut
+                voluptas.
+              </p>
+              <div class="row">
+                <p class="col-6"><strong>$139.00</strong></p>
+                <p class="col-6 text-end">
+                  <i class="fa-solid fa-location-dot"></i>
+                  India
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Section -->
+      <div class="col-md-6">
+        <div class="d-flex gap-2">
+          <h1 class="text-pink">Why</h1>
+          <h1 class="">Choose Us</h1>
+        </div>
+
+        <p class="lead">
+          Tempora facere doloribus id aut. Ea maiores esse accusantium
+          laboriosam. Quos commodi non assumenda quam illum.
+        </p>
+        <ul>
+          <li>
+            <i class="fa-solid fa-diamond text-pink"></i>
+            Assumenda nobis sit deserunt dolorem repudiandae occaecati quisquam.
+          </li>
+          <li>
+            <i class="fa-solid fa-diamond text-pink"></i>
+            Beatae aut beatae sed aliquid et accusamus vel.
+          </li>
+          <li>
+            <i class="fa-solid fa-diamond text-pink"></i>
+            Dolores qui nihil quaerat ducimus fugit aut praesentium.
+          </li>
+          <li>
+            <i class="fa-solid fa-diamond text-pink"></i>
+            Necessitatibus ut culpa molestias deleniti porro maxime enim sed
+            vel.
+          </li>
+        </ul>
+        <p class="mt-4">
+          Earum repellendus animi asperiores mollitia harum illo quia dicta.
+          Praesentium aperiam amet. Dolorem praesentium aspernatur ipsum
+          dignissimos saepe tempora est.
+        </p>
+        <div class="rating">
+          <span>⭐ 4.92</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trending-destination my-5 fade-right">
+  <div class="container">
+    <div class="d-flex gap-2">
+      <h1 class="">Trending</h1>
+
+      <h1 class="text-pink">Destination</h1>
+      <h1 class="">Now Days</h1>
+    </div>
+    <p class="mb-5">
+      Tempora Facere Doloribus Id Aut. Ea Maiores Esse Accusantium Laboriosam.
+      Quos Commodi Non Assumenda Quam Illum. Id Omnis Saepe Corrupti Incidunt
+      Qui Sed Delectus. Eaque Minus Ducimus.
+    </p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card position-relative overflow-hidden">
+          <img
+            src="{{url_for('static',filename='images/trendingdestination/Jakarta.png')}}"
+            class="card-img-top"
+            alt="Dubai"
+          />
+          <div
+            class="card-body text-center position-absolute bottom-0 w-100 slide-up"
+          >
+            <h5 class="card-title text-white bg-dark py-2">Jakarta</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card position-relative overflow-hidden">
+          <img
+            src="{{url_for('static',filename='images/trendingdestination/Dubai.png')}}"
+            class="card-img-top"
+            alt="Dubai"
+          />
+          <div
+            class="card-body text-center position-absolute bottom-0 w-100 slide-up"
+          >
+            <h5 class="card-title text-white bg-dark py-2">Dubai</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card position-relative overflow-hidden">
+          <img
+            src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+            class="card-img-top"
+            alt="Dubai"
+          />
+          <div
+            class="card-body text-center position-absolute bottom-0 w-100 slide-up"
+          >
+            <h5 class="card-title text-white bg-dark py-2">London</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="feature-infomation fade-opacity">
+  <div class="container my-5">
+    <h2 class="text-center fw-bold">Featured Information</h2>
+    <p class="text-center text-muted">
+      Tempora Facere Doloribus Id Aut. Ea Maiores Esse Accusantium Laboriosam.
+      Quos Commodi Non Assumenda Quam Illum.
+    </p>
+    <div class="swiper mt-4">
+      <!-- Wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slide -->
+        <div class="swiper-slide row d-flex justify-content-between">
+          <div class="col-3 card shadow-sm p-3 text-center">
+            <img
+              src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+              class="rounded-circle mx-auto mb-3"
+              alt="Profile 1"
+              style="width: 60px; height: 60px"
+            />
+            <p>Odit Deserunt Quia Et Sed Repellendus Veniam Totam...</p>
+            <h5>Carolyn Jacobson</h5>
+            <p class="text-muted">Brazil</p>
+            <div>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+            </div>
+          </div>
+          <div class="col-3 card shadow-sm p-3 text-center">
+            <img
+              src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+              class="rounded-circle mx-auto mb-3"
+              alt="Profile 1"
+              style="width: 60px; height: 60px"
+            />
+            <p>Odit Deserunt Quia Et Sed Repellendus Veniam Totam...</p>
+            <h5>Carolyn Jacobson</h5>
+            <p class="text-muted">Brazil</p>
+            <div>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+            </div>
+          </div>
+          <div class="col-3 card shadow-sm p-3 text-center">
+            <img
+              src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+              class="rounded-circle mx-auto mb-3"
+              alt="Profile 1"
+              style="width: 60px; height: 60px"
+            />
+            <p>Odit Deserunt Quia Et Sed Repellendus Veniam Totam...</p>
+            <h5>Carolyn Jacobson</h5>
+            <p class="text-muted">Brazil</p>
+            <div>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide row d-flex justify-content-between">
+          <div class="col-3 card shadow-sm p-3 text-center">
+            <img
+              src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+              class="rounded-circle mx-auto mb-3"
+              alt="Profile 1"
+              style="width: 60px; height: 60px"
+            />
+            <p>Odit Deserunt Quia Et Sed Repellendus Veniam Totam...</p>
+            <h5>Carolyn Jacobson</h5>
+            <p class="text-muted">Brazil</p>
+            <div>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+            </div>
+          </div>
+          <div class="col-3 card shadow-sm p-3 text-center">
+            <img
+              src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+              class="rounded-circle mx-auto mb-3"
+              alt="Profile 1"
+              style="width: 60px; height: 60px"
+            />
+            <p>Odit Deserunt Quia Et Sed Repellendus Veniam Totam...</p>
+            <h5>Carolyn Jacobson</h5>
+            <p class="text-muted">Brazil</p>
+            <div>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+            </div>
+          </div>
+          <div class="col-3 card shadow-sm p-3 text-center">
+            <img
+              src="{{url_for('static',filename='images/trendingdestination/London.png')}}"
+              class="rounded-circle mx-auto mb-3"
+              alt="Profile 1"
+              style="width: 60px; height: 60px"
+            />
+            <p>Odit Deserunt Quia Et Sed Repellendus Veniam Totam...</p>
+            <h5>Carolyn Jacobson</h5>
+            <p class="text-muted">Brazil</p>
+            <div>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+              <span class="text-warning">&#9733;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light py-5 fade-translate">
+  <div class="container my-5">
+    <div
+      class="row text-center d-flex align-items-center justify-content-center"
+    >
+      <div class="col-md-2">
+        <div class="stat shadow p-4 rounded bg-white">
+          <span id="count1" class="count display-4" data-target="120">0</span>+
+          <p class="fw-semibold">Đường bay nội địa và quốc tế</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="stat shadow p-4 rounded bg-white">
+          <span id="count2" class="count display-4" data-target="400">0</span>+
+          <p class="fw-semibold">Chuyến bay mỗi ngày</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="stat shadow p-4 rounded bg-white">
+          <span id="count3" class="count display-4" data-target="6000">0</span>+
+          <p class="fw-semibold">Nhân viên thân thiện, tận tình</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="stat shadow p-4 rounded bg-white">
+          <span id="count4" class="count display-4" data-target="100">0</span>+
+          <p class="fw-semibold">Tàu bay mới hiện đại</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %} {% block scripts %}
+<script src="{{ url_for('static', filename='js/searchBox.js') }}"></script>
+<script src="{{ url_for('static', filename='js/home_navbar.js') }}"></script>
+{% endblock %}

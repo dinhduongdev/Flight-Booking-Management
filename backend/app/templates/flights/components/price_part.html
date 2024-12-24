@@ -1,0 +1,54 @@
+{% set colors = ['white', '#e0a623', '#223a60', '#C96868', '#118B50', '#FF7F3E'] %}
+{% macro price_part(endpoint, role = current_user.role.value if current_user.role) %}
+    <!-- Access the kwargs once -->
+    {% if False %}{{ kwargs }}{% endif %}
+    <!--  -->
+    {% set remain_time_to_depart = (flight.depart_time - search_time).total_seconds()/60 %}
+    <!-- If the the flight has departed -->
+    {% if remain_time_to_depart <= 0 %}
+        <div class="d-flex flex-column justify-content-center w-100 shadow">
+            <div class="text-center">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p class="text-muted">This flight has departed</p>
+            </div>
+        </div>
+    <!-- If the staff cant even book -->
+    {% elif remain_time_to_depart < staff_min_booking_time %}
+        <div class="d-flex flex-column justify-content-center w-100 shadow">
+            <div class="text-center">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <p class="text-muted">
+                This flight doesn't allow to book anymore!
+                </p>
+            </div>
+        </div>
+    <!-- If the user is a customer and the booking time is over -->
+    {% elif (not role or role == 4) and remain_time_to_depart < customer_min_booking_time %} 
+        <div class="d-flex flex-column justify-content-center w-100 shadow">
+            <div class="text-center">
+                <i class="fa-solid fa-person-running"></i>
+                <p class="text-muted">Please go to the closest store to book!</p>
+            </div>
+        </div>
+    <!-- Everyone can book -->
+    {% else %}
+        <!-- Loop through all seatclasses of the flight -->
+        {% for id, class in flight.get_remaining_seatclasses_and_info().items() %}
+            {% if class['remaining'] > 0 %}
+                <a href="{{ url_for(endpoint, seat_class=id, **kwargs) }}" 
+                class="flex-grow-1 d-flex flex-column align-items-center text-white text-decoration-none p-1" 
+                style="background-color: {{colors[id]}};"
+                >
+                    <div class="mb-2">{{class['class_name']}}</div>
+                    <div class="mb-2">{{ "{:,}".format(class['price']) }} {{class['currency']}}</div>
+                    <div>Remaining: {{class['remaining']}}</div>
+                </a>
+            {% else %}
+                <div class="flex-grow-1 d-block text-center bg-secondary">
+                    <div>{{class['class_name']}}</div>
+                    <div>Full</div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endmacro %}

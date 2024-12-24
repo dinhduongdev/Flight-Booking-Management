@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    {% if vnp_ResponseCode == '00' %}
+    <div class="card ms-5 d-md-block">
+        <div class="card-body">
+            <h2 class="card-title text-start mb-4">&#9989; PAYMENT SUCCESSFUL</h2>
+            <p>You have successfully paid for invoice {{ order_id }}</p>
+            <p>Your flight booking has been confirmed. Below are the details of your flight:</p>
+
+            <div class="bg-light mt-3 p-2 rounded">
+                <h3>Flight Information</h3>
+                <p><b>From:</b> {{ flight.route.depart_airport.name }} <i class="fa-solid fa-arrow-right"></i>
+                    <b>To:</b> {{ flight.route.arrive_airport.name }}
+                </p>
+                <div class="">
+                    <span><b>Depart time:</b> {{ flight.depart_time }}</span>
+                    <span><b>Arrive time:</b> {{ flight.arrive_time }}</span>
+                </div>
+            </div>
+
+            <div class="bg-light mt-3 p-2 rounded">
+                <h3>Seat Information</h3>
+                <p><b>Seat:</b> {{ flight_seat.aircraft_seat.seat_name }}</p>
+                <p><b>Price:</b> {{ "{:,.0f}".format(flight_seat.price) }} {{ flight_seat.currency }}</p>
+            </div>
+
+            <div class="bg-light mt-3 p-2 rounded">
+                <h3>Booking Information</h3>
+                <p><b>Name:</b> {{ reservation.owner.first_name }} {{ reservation.owner.last_name }}</p>
+                <p><b>Email:</b> {{ reservation.owner.email }}</p>
+                <p><b>Phone number:</b> {{ reservation.owner.phone }}</p>
+            </div>
+
+            <div class="alert alert-success mt-3" role="alert">
+                Thank you for booking your ticket! We will contact you via email or phone when we have new information.
+            </div>
+            <a href="/manage-bookings/own" class="btn col-12 btn-primary-invert">Go to manage bookings</a>
+        </div>
+    </div>
+    {% elif vnp_ResponseCode == '24' %}
+    <div class="card ms-5 d-md-block">
+        <div class="card-body">
+            <h2 class="card-title text-start mb-4"><i class="fas fa-info-circle" style="color: #058df5;"></i>
+                TRANSACTION CANCELED</h2>
+            <p>You have canceled the transaction for invoice {{ order_id }}</p>
+            <a href="/booking/payment/{{ reservation.id }}" class="btn col-12 btn-primary-invert">Make the payment again</a>
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<style>
+    footer {
+        margin-top: 20%;
+    }
+</style>
+{% endblock %}

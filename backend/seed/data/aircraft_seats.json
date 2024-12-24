@@ -1,0 +1,7466 @@
+[
+    {
+        "id": 1,
+        "aircraft_id": 1,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 2,
+        "aircraft_id": 1,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 3,
+        "aircraft_id": 1,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 4,
+        "aircraft_id": 1,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 5,
+        "aircraft_id": 1,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 6,
+        "aircraft_id": 1,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 7,
+        "aircraft_id": 1,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 8,
+        "aircraft_id": 1,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 9,
+        "aircraft_id": 2,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 10,
+        "aircraft_id": 2,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 11,
+        "aircraft_id": 2,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 12,
+        "aircraft_id": 2,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 13,
+        "aircraft_id": 2,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 14,
+        "aircraft_id": 2,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 15,
+        "aircraft_id": 2,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 16,
+        "aircraft_id": 2,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 17,
+        "aircraft_id": 3,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 18,
+        "aircraft_id": 3,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 19,
+        "aircraft_id": 3,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 20,
+        "aircraft_id": 3,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 21,
+        "aircraft_id": 3,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 22,
+        "aircraft_id": 3,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 23,
+        "aircraft_id": 3,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 24,
+        "aircraft_id": 3,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 25,
+        "aircraft_id": 4,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 26,
+        "aircraft_id": 4,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 27,
+        "aircraft_id": 4,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 28,
+        "aircraft_id": 4,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 29,
+        "aircraft_id": 4,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 30,
+        "aircraft_id": 4,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 31,
+        "aircraft_id": 4,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 32,
+        "aircraft_id": 4,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 33,
+        "aircraft_id": 5,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 34,
+        "aircraft_id": 5,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 35,
+        "aircraft_id": 5,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 36,
+        "aircraft_id": 5,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 37,
+        "aircraft_id": 5,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 38,
+        "aircraft_id": 5,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 39,
+        "aircraft_id": 5,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 40,
+        "aircraft_id": 5,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 41,
+        "aircraft_id": 6,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 42,
+        "aircraft_id": 6,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 43,
+        "aircraft_id": 6,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 44,
+        "aircraft_id": 6,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 45,
+        "aircraft_id": 6,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 46,
+        "aircraft_id": 6,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 47,
+        "aircraft_id": 6,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 48,
+        "aircraft_id": 6,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 49,
+        "aircraft_id": 7,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 50,
+        "aircraft_id": 7,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 51,
+        "aircraft_id": 7,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 52,
+        "aircraft_id": 7,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 53,
+        "aircraft_id": 7,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 54,
+        "aircraft_id": 7,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 55,
+        "aircraft_id": 7,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 56,
+        "aircraft_id": 7,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 57,
+        "aircraft_id": 8,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 58,
+        "aircraft_id": 8,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 59,
+        "aircraft_id": 8,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 60,
+        "aircraft_id": 8,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 61,
+        "aircraft_id": 8,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 62,
+        "aircraft_id": 8,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 63,
+        "aircraft_id": 8,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 64,
+        "aircraft_id": 8,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 65,
+        "aircraft_id": 9,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 66,
+        "aircraft_id": 9,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 67,
+        "aircraft_id": 9,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 68,
+        "aircraft_id": 9,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 69,
+        "aircraft_id": 9,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 70,
+        "aircraft_id": 9,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 71,
+        "aircraft_id": 9,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 72,
+        "aircraft_id": 9,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 73,
+        "aircraft_id": 10,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 74,
+        "aircraft_id": 10,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 75,
+        "aircraft_id": 10,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 76,
+        "aircraft_id": 10,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 77,
+        "aircraft_id": 10,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 78,
+        "aircraft_id": 10,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 79,
+        "aircraft_id": 10,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 80,
+        "aircraft_id": 10,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 81,
+        "aircraft_id": 11,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 82,
+        "aircraft_id": 11,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 83,
+        "aircraft_id": 11,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 84,
+        "aircraft_id": 11,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 85,
+        "aircraft_id": 11,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 86,
+        "aircraft_id": 11,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 87,
+        "aircraft_id": 11,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 88,
+        "aircraft_id": 11,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 89,
+        "aircraft_id": 12,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 90,
+        "aircraft_id": 12,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 91,
+        "aircraft_id": 12,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 92,
+        "aircraft_id": 12,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 93,
+        "aircraft_id": 12,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 94,
+        "aircraft_id": 12,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 95,
+        "aircraft_id": 12,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 96,
+        "aircraft_id": 12,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 97,
+        "aircraft_id": 13,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 98,
+        "aircraft_id": 13,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 99,
+        "aircraft_id": 13,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 100,
+        "aircraft_id": 13,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 101,
+        "aircraft_id": 13,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 102,
+        "aircraft_id": 13,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 103,
+        "aircraft_id": 13,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 104,
+        "aircraft_id": 13,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 105,
+        "aircraft_id": 14,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 106,
+        "aircraft_id": 14,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 107,
+        "aircraft_id": 14,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 108,
+        "aircraft_id": 14,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 109,
+        "aircraft_id": 14,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 110,
+        "aircraft_id": 14,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 111,
+        "aircraft_id": 14,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 112,
+        "aircraft_id": 14,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 113,
+        "aircraft_id": 15,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 114,
+        "aircraft_id": 15,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 115,
+        "aircraft_id": 15,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 116,
+        "aircraft_id": 15,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 117,
+        "aircraft_id": 15,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 118,
+        "aircraft_id": 15,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 119,
+        "aircraft_id": 15,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 120,
+        "aircraft_id": 15,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 121,
+        "aircraft_id": 16,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 122,
+        "aircraft_id": 16,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 123,
+        "aircraft_id": 16,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 124,
+        "aircraft_id": 16,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 125,
+        "aircraft_id": 16,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 126,
+        "aircraft_id": 16,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 127,
+        "aircraft_id": 16,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 128,
+        "aircraft_id": 16,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 129,
+        "aircraft_id": 17,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 130,
+        "aircraft_id": 17,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 131,
+        "aircraft_id": 17,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 132,
+        "aircraft_id": 17,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 133,
+        "aircraft_id": 17,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 134,
+        "aircraft_id": 17,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 135,
+        "aircraft_id": 17,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 136,
+        "aircraft_id": 17,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 137,
+        "aircraft_id": 18,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 138,
+        "aircraft_id": 18,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 139,
+        "aircraft_id": 18,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 140,
+        "aircraft_id": 18,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 141,
+        "aircraft_id": 18,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 142,
+        "aircraft_id": 18,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 143,
+        "aircraft_id": 18,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 144,
+        "aircraft_id": 18,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 145,
+        "aircraft_id": 19,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 146,
+        "aircraft_id": 19,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 147,
+        "aircraft_id": 19,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 148,
+        "aircraft_id": 19,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 149,
+        "aircraft_id": 19,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 150,
+        "aircraft_id": 19,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 151,
+        "aircraft_id": 19,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 152,
+        "aircraft_id": 19,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 153,
+        "aircraft_id": 20,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 154,
+        "aircraft_id": 20,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 155,
+        "aircraft_id": 20,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 156,
+        "aircraft_id": 20,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 157,
+        "aircraft_id": 20,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 158,
+        "aircraft_id": 20,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 159,
+        "aircraft_id": 20,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 160,
+        "aircraft_id": 20,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 161,
+        "aircraft_id": 21,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 162,
+        "aircraft_id": 21,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 163,
+        "aircraft_id": 21,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 164,
+        "aircraft_id": 21,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 165,
+        "aircraft_id": 21,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 166,
+        "aircraft_id": 21,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 167,
+        "aircraft_id": 21,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 168,
+        "aircraft_id": 21,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 169,
+        "aircraft_id": 22,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 170,
+        "aircraft_id": 22,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 171,
+        "aircraft_id": 22,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 172,
+        "aircraft_id": 22,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 173,
+        "aircraft_id": 22,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 174,
+        "aircraft_id": 22,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 175,
+        "aircraft_id": 22,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 176,
+        "aircraft_id": 22,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 177,
+        "aircraft_id": 23,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 178,
+        "aircraft_id": 23,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 179,
+        "aircraft_id": 23,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 180,
+        "aircraft_id": 23,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 181,
+        "aircraft_id": 23,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 182,
+        "aircraft_id": 23,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 183,
+        "aircraft_id": 23,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 184,
+        "aircraft_id": 23,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 185,
+        "aircraft_id": 24,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 186,
+        "aircraft_id": 24,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 187,
+        "aircraft_id": 24,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 188,
+        "aircraft_id": 24,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 189,
+        "aircraft_id": 24,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 190,
+        "aircraft_id": 24,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 191,
+        "aircraft_id": 24,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 192,
+        "aircraft_id": 24,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 193,
+        "aircraft_id": 25,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 194,
+        "aircraft_id": 25,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 195,
+        "aircraft_id": 25,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 196,
+        "aircraft_id": 25,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 197,
+        "aircraft_id": 25,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 198,
+        "aircraft_id": 25,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 199,
+        "aircraft_id": 25,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 200,
+        "aircraft_id": 25,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 201,
+        "aircraft_id": 26,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 202,
+        "aircraft_id": 26,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 203,
+        "aircraft_id": 26,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 204,
+        "aircraft_id": 26,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 205,
+        "aircraft_id": 26,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 206,
+        "aircraft_id": 26,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 207,
+        "aircraft_id": 26,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 208,
+        "aircraft_id": 26,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 209,
+        "aircraft_id": 27,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 210,
+        "aircraft_id": 27,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 211,
+        "aircraft_id": 27,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 212,
+        "aircraft_id": 27,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 213,
+        "aircraft_id": 27,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 214,
+        "aircraft_id": 27,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 215,
+        "aircraft_id": 27,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 216,
+        "aircraft_id": 27,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 217,
+        "aircraft_id": 28,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 218,
+        "aircraft_id": 28,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 219,
+        "aircraft_id": 28,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 220,
+        "aircraft_id": 28,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 221,
+        "aircraft_id": 28,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 222,
+        "aircraft_id": 28,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 223,
+        "aircraft_id": 28,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 224,
+        "aircraft_id": 28,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 225,
+        "aircraft_id": 29,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 226,
+        "aircraft_id": 29,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 227,
+        "aircraft_id": 29,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 228,
+        "aircraft_id": 29,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 229,
+        "aircraft_id": 29,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 230,
+        "aircraft_id": 29,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 231,
+        "aircraft_id": 29,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 232,
+        "aircraft_id": 29,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 233,
+        "aircraft_id": 30,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 234,
+        "aircraft_id": 30,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 235,
+        "aircraft_id": 30,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 236,
+        "aircraft_id": 30,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 237,
+        "aircraft_id": 30,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 238,
+        "aircraft_id": 30,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 239,
+        "aircraft_id": 30,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 240,
+        "aircraft_id": 30,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 241,
+        "aircraft_id": 31,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 242,
+        "aircraft_id": 31,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 243,
+        "aircraft_id": 31,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 244,
+        "aircraft_id": 31,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 245,
+        "aircraft_id": 31,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 246,
+        "aircraft_id": 31,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 247,
+        "aircraft_id": 31,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 248,
+        "aircraft_id": 31,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 249,
+        "aircraft_id": 32,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 250,
+        "aircraft_id": 32,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 251,
+        "aircraft_id": 32,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 252,
+        "aircraft_id": 32,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 253,
+        "aircraft_id": 32,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 254,
+        "aircraft_id": 32,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 255,
+        "aircraft_id": 32,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 256,
+        "aircraft_id": 32,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 257,
+        "aircraft_id": 33,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 258,
+        "aircraft_id": 33,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 259,
+        "aircraft_id": 33,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 260,
+        "aircraft_id": 33,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 261,
+        "aircraft_id": 33,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 262,
+        "aircraft_id": 33,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 263,
+        "aircraft_id": 33,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 264,
+        "aircraft_id": 33,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 265,
+        "aircraft_id": 34,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 266,
+        "aircraft_id": 34,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 267,
+        "aircraft_id": 34,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 268,
+        "aircraft_id": 34,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 269,
+        "aircraft_id": 34,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 270,
+        "aircraft_id": 34,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 271,
+        "aircraft_id": 34,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 272,
+        "aircraft_id": 34,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 273,
+        "aircraft_id": 35,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 274,
+        "aircraft_id": 35,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 275,
+        "aircraft_id": 35,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 276,
+        "aircraft_id": 35,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 277,
+        "aircraft_id": 35,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 278,
+        "aircraft_id": 35,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 279,
+        "aircraft_id": 35,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 280,
+        "aircraft_id": 35,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 281,
+        "aircraft_id": 36,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 282,
+        "aircraft_id": 36,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 283,
+        "aircraft_id": 36,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 284,
+        "aircraft_id": 36,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 285,
+        "aircraft_id": 36,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 286,
+        "aircraft_id": 36,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 287,
+        "aircraft_id": 36,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 288,
+        "aircraft_id": 36,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 289,
+        "aircraft_id": 37,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 290,
+        "aircraft_id": 37,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 291,
+        "aircraft_id": 37,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 292,
+        "aircraft_id": 37,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 293,
+        "aircraft_id": 37,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 294,
+        "aircraft_id": 37,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 295,
+        "aircraft_id": 37,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 296,
+        "aircraft_id": 37,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 297,
+        "aircraft_id": 38,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 298,
+        "aircraft_id": 38,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 299,
+        "aircraft_id": 38,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 300,
+        "aircraft_id": 38,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 301,
+        "aircraft_id": 38,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 302,
+        "aircraft_id": 38,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 303,
+        "aircraft_id": 38,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 304,
+        "aircraft_id": 38,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 305,
+        "aircraft_id": 39,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 306,
+        "aircraft_id": 39,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 307,
+        "aircraft_id": 39,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 308,
+        "aircraft_id": 39,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 309,
+        "aircraft_id": 39,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 310,
+        "aircraft_id": 39,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 311,
+        "aircraft_id": 39,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 312,
+        "aircraft_id": 39,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 313,
+        "aircraft_id": 40,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 314,
+        "aircraft_id": 40,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 315,
+        "aircraft_id": 40,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 316,
+        "aircraft_id": 40,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 317,
+        "aircraft_id": 40,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 318,
+        "aircraft_id": 40,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 319,
+        "aircraft_id": 40,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 320,
+        "aircraft_id": 40,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 321,
+        "aircraft_id": 41,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 322,
+        "aircraft_id": 41,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 323,
+        "aircraft_id": 41,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 324,
+        "aircraft_id": 41,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 325,
+        "aircraft_id": 41,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 326,
+        "aircraft_id": 41,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 327,
+        "aircraft_id": 41,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 328,
+        "aircraft_id": 41,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 329,
+        "aircraft_id": 42,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 330,
+        "aircraft_id": 42,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 331,
+        "aircraft_id": 42,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 332,
+        "aircraft_id": 42,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 333,
+        "aircraft_id": 42,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 334,
+        "aircraft_id": 42,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 335,
+        "aircraft_id": 42,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 336,
+        "aircraft_id": 42,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 337,
+        "aircraft_id": 43,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 338,
+        "aircraft_id": 43,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 339,
+        "aircraft_id": 43,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 340,
+        "aircraft_id": 43,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 341,
+        "aircraft_id": 43,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 342,
+        "aircraft_id": 43,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 343,
+        "aircraft_id": 43,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 344,
+        "aircraft_id": 43,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 345,
+        "aircraft_id": 44,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 346,
+        "aircraft_id": 44,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 347,
+        "aircraft_id": 44,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 348,
+        "aircraft_id": 44,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 349,
+        "aircraft_id": 44,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 350,
+        "aircraft_id": 44,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 351,
+        "aircraft_id": 44,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 352,
+        "aircraft_id": 44,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 353,
+        "aircraft_id": 44,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 354,
+        "aircraft_id": 44,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 355,
+        "aircraft_id": 45,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 356,
+        "aircraft_id": 45,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 357,
+        "aircraft_id": 45,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 358,
+        "aircraft_id": 45,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 359,
+        "aircraft_id": 45,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 360,
+        "aircraft_id": 45,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 361,
+        "aircraft_id": 46,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 362,
+        "aircraft_id": 46,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 363,
+        "aircraft_id": 46,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 364,
+        "aircraft_id": 46,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 365,
+        "aircraft_id": 46,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 366,
+        "aircraft_id": 46,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 367,
+        "aircraft_id": 46,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 368,
+        "aircraft_id": 46,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 369,
+        "aircraft_id": 46,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 370,
+        "aircraft_id": 46,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 371,
+        "aircraft_id": 47,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 372,
+        "aircraft_id": 47,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 373,
+        "aircraft_id": 47,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 374,
+        "aircraft_id": 47,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 375,
+        "aircraft_id": 47,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 376,
+        "aircraft_id": 47,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 377,
+        "aircraft_id": 47,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 378,
+        "aircraft_id": 47,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 379,
+        "aircraft_id": 47,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 380,
+        "aircraft_id": 47,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 381,
+        "aircraft_id": 48,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 382,
+        "aircraft_id": 48,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 383,
+        "aircraft_id": 48,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 384,
+        "aircraft_id": 48,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 385,
+        "aircraft_id": 48,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 386,
+        "aircraft_id": 48,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 387,
+        "aircraft_id": 48,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 388,
+        "aircraft_id": 48,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 389,
+        "aircraft_id": 48,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 390,
+        "aircraft_id": 48,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 391,
+        "aircraft_id": 49,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 392,
+        "aircraft_id": 49,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 393,
+        "aircraft_id": 49,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 394,
+        "aircraft_id": 49,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 395,
+        "aircraft_id": 49,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 396,
+        "aircraft_id": 49,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 397,
+        "aircraft_id": 49,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 398,
+        "aircraft_id": 49,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 399,
+        "aircraft_id": 49,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 400,
+        "aircraft_id": 49,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 401,
+        "aircraft_id": 50,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 402,
+        "aircraft_id": 50,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 403,
+        "aircraft_id": 50,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 404,
+        "aircraft_id": 50,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 405,
+        "aircraft_id": 50,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 406,
+        "aircraft_id": 50,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 407,
+        "aircraft_id": 50,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 408,
+        "aircraft_id": 50,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 409,
+        "aircraft_id": 50,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 410,
+        "aircraft_id": 50,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 411,
+        "aircraft_id": 51,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 412,
+        "aircraft_id": 51,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 413,
+        "aircraft_id": 51,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 414,
+        "aircraft_id": 51,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 415,
+        "aircraft_id": 51,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 416,
+        "aircraft_id": 51,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 417,
+        "aircraft_id": 51,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 418,
+        "aircraft_id": 51,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 419,
+        "aircraft_id": 51,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 420,
+        "aircraft_id": 51,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 421,
+        "aircraft_id": 52,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 422,
+        "aircraft_id": 52,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 423,
+        "aircraft_id": 52,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 424,
+        "aircraft_id": 52,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 425,
+        "aircraft_id": 52,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 426,
+        "aircraft_id": 52,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 427,
+        "aircraft_id": 52,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 428,
+        "aircraft_id": 52,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 429,
+        "aircraft_id": 52,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 430,
+        "aircraft_id": 52,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 431,
+        "aircraft_id": 53,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 432,
+        "aircraft_id": 53,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 433,
+        "aircraft_id": 53,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 434,
+        "aircraft_id": 53,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 435,
+        "aircraft_id": 53,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 436,
+        "aircraft_id": 53,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 437,
+        "aircraft_id": 53,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 438,
+        "aircraft_id": 53,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 439,
+        "aircraft_id": 53,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 440,
+        "aircraft_id": 53,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 441,
+        "aircraft_id": 54,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 442,
+        "aircraft_id": 54,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 443,
+        "aircraft_id": 54,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 444,
+        "aircraft_id": 54,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 445,
+        "aircraft_id": 54,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 446,
+        "aircraft_id": 54,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 447,
+        "aircraft_id": 54,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 448,
+        "aircraft_id": 54,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 449,
+        "aircraft_id": 54,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 450,
+        "aircraft_id": 54,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 451,
+        "aircraft_id": 55,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 452,
+        "aircraft_id": 55,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 453,
+        "aircraft_id": 55,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 454,
+        "aircraft_id": 55,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 455,
+        "aircraft_id": 55,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 456,
+        "aircraft_id": 55,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 457,
+        "aircraft_id": 56,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 458,
+        "aircraft_id": 56,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 459,
+        "aircraft_id": 56,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 460,
+        "aircraft_id": 56,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 461,
+        "aircraft_id": 56,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 462,
+        "aircraft_id": 56,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 463,
+        "aircraft_id": 56,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 464,
+        "aircraft_id": 56,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 465,
+        "aircraft_id": 56,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 466,
+        "aircraft_id": 56,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 467,
+        "aircraft_id": 57,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 468,
+        "aircraft_id": 57,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 469,
+        "aircraft_id": 57,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 470,
+        "aircraft_id": 57,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 471,
+        "aircraft_id": 57,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 472,
+        "aircraft_id": 57,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 473,
+        "aircraft_id": 58,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 474,
+        "aircraft_id": 58,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 475,
+        "aircraft_id": 58,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 476,
+        "aircraft_id": 58,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 477,
+        "aircraft_id": 58,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 478,
+        "aircraft_id": 58,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 479,
+        "aircraft_id": 59,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 480,
+        "aircraft_id": 59,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 481,
+        "aircraft_id": 59,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 482,
+        "aircraft_id": 59,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 483,
+        "aircraft_id": 59,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 484,
+        "aircraft_id": 59,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 485,
+        "aircraft_id": 60,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 486,
+        "aircraft_id": 60,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 487,
+        "aircraft_id": 60,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 488,
+        "aircraft_id": 60,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 489,
+        "aircraft_id": 60,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 490,
+        "aircraft_id": 60,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 491,
+        "aircraft_id": 61,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 492,
+        "aircraft_id": 61,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 493,
+        "aircraft_id": 61,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 494,
+        "aircraft_id": 61,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 495,
+        "aircraft_id": 61,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 496,
+        "aircraft_id": 61,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 497,
+        "aircraft_id": 61,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 498,
+        "aircraft_id": 61,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 499,
+        "aircraft_id": 61,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 500,
+        "aircraft_id": 61,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 501,
+        "aircraft_id": 62,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 502,
+        "aircraft_id": 62,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 503,
+        "aircraft_id": 62,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 504,
+        "aircraft_id": 62,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 505,
+        "aircraft_id": 62,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 506,
+        "aircraft_id": 62,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 507,
+        "aircraft_id": 62,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 508,
+        "aircraft_id": 62,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 509,
+        "aircraft_id": 62,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 510,
+        "aircraft_id": 62,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 511,
+        "aircraft_id": 63,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 512,
+        "aircraft_id": 63,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 513,
+        "aircraft_id": 63,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 514,
+        "aircraft_id": 63,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 515,
+        "aircraft_id": 63,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 516,
+        "aircraft_id": 63,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 517,
+        "aircraft_id": 63,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 518,
+        "aircraft_id": 63,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 519,
+        "aircraft_id": 63,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 520,
+        "aircraft_id": 63,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 521,
+        "aircraft_id": 64,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 522,
+        "aircraft_id": 64,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 523,
+        "aircraft_id": 64,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 524,
+        "aircraft_id": 64,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 525,
+        "aircraft_id": 64,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 526,
+        "aircraft_id": 64,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 527,
+        "aircraft_id": 64,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 528,
+        "aircraft_id": 64,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 529,
+        "aircraft_id": 64,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 530,
+        "aircraft_id": 64,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 531,
+        "aircraft_id": 65,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 532,
+        "aircraft_id": 65,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 533,
+        "aircraft_id": 65,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 534,
+        "aircraft_id": 65,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 535,
+        "aircraft_id": 65,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 536,
+        "aircraft_id": 65,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 537,
+        "aircraft_id": 66,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 538,
+        "aircraft_id": 66,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 539,
+        "aircraft_id": 66,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 540,
+        "aircraft_id": 66,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 541,
+        "aircraft_id": 66,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 542,
+        "aircraft_id": 66,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 543,
+        "aircraft_id": 66,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 544,
+        "aircraft_id": 66,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 545,
+        "aircraft_id": 66,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 546,
+        "aircraft_id": 66,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 547,
+        "aircraft_id": 67,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 548,
+        "aircraft_id": 67,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 549,
+        "aircraft_id": 67,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 550,
+        "aircraft_id": 67,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 551,
+        "aircraft_id": 67,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 552,
+        "aircraft_id": 67,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 553,
+        "aircraft_id": 67,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 554,
+        "aircraft_id": 67,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 555,
+        "aircraft_id": 67,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 556,
+        "aircraft_id": 67,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 557,
+        "aircraft_id": 68,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 558,
+        "aircraft_id": 68,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 559,
+        "aircraft_id": 68,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 560,
+        "aircraft_id": 68,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 561,
+        "aircraft_id": 68,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 562,
+        "aircraft_id": 68,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 563,
+        "aircraft_id": 69,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 564,
+        "aircraft_id": 69,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 565,
+        "aircraft_id": 69,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 566,
+        "aircraft_id": 69,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 567,
+        "aircraft_id": 69,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 568,
+        "aircraft_id": 69,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 569,
+        "aircraft_id": 70,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 570,
+        "aircraft_id": 70,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 571,
+        "aircraft_id": 70,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 572,
+        "aircraft_id": 70,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 573,
+        "aircraft_id": 70,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 574,
+        "aircraft_id": 70,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 575,
+        "aircraft_id": 71,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 576,
+        "aircraft_id": 71,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 577,
+        "aircraft_id": 71,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 578,
+        "aircraft_id": 71,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 579,
+        "aircraft_id": 71,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 580,
+        "aircraft_id": 71,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 581,
+        "aircraft_id": 71,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 582,
+        "aircraft_id": 71,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 583,
+        "aircraft_id": 71,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 584,
+        "aircraft_id": 71,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 585,
+        "aircraft_id": 72,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 586,
+        "aircraft_id": 72,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 587,
+        "aircraft_id": 72,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 588,
+        "aircraft_id": 72,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 589,
+        "aircraft_id": 72,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 590,
+        "aircraft_id": 72,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 591,
+        "aircraft_id": 72,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 592,
+        "aircraft_id": 72,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 593,
+        "aircraft_id": 72,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 594,
+        "aircraft_id": 72,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 595,
+        "aircraft_id": 73,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 596,
+        "aircraft_id": 73,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 597,
+        "aircraft_id": 73,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 598,
+        "aircraft_id": 73,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 599,
+        "aircraft_id": 73,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 600,
+        "aircraft_id": 73,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 601,
+        "aircraft_id": 73,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 602,
+        "aircraft_id": 73,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 603,
+        "aircraft_id": 73,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 604,
+        "aircraft_id": 73,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 605,
+        "aircraft_id": 74,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 606,
+        "aircraft_id": 74,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 607,
+        "aircraft_id": 74,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 608,
+        "aircraft_id": 74,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 609,
+        "aircraft_id": 74,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 610,
+        "aircraft_id": 74,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 611,
+        "aircraft_id": 74,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 612,
+        "aircraft_id": 74,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 613,
+        "aircraft_id": 74,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 614,
+        "aircraft_id": 74,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 615,
+        "aircraft_id": 75,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 616,
+        "aircraft_id": 75,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 617,
+        "aircraft_id": 75,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 618,
+        "aircraft_id": 75,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 619,
+        "aircraft_id": 75,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 620,
+        "aircraft_id": 75,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 621,
+        "aircraft_id": 75,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 622,
+        "aircraft_id": 75,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 623,
+        "aircraft_id": 75,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 624,
+        "aircraft_id": 75,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 625,
+        "aircraft_id": 76,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 626,
+        "aircraft_id": 76,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 627,
+        "aircraft_id": 76,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 628,
+        "aircraft_id": 76,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 629,
+        "aircraft_id": 76,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 630,
+        "aircraft_id": 76,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 631,
+        "aircraft_id": 76,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 632,
+        "aircraft_id": 76,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 633,
+        "aircraft_id": 76,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 634,
+        "aircraft_id": 76,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 635,
+        "aircraft_id": 77,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 636,
+        "aircraft_id": 77,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 637,
+        "aircraft_id": 77,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 638,
+        "aircraft_id": 77,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 639,
+        "aircraft_id": 77,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 640,
+        "aircraft_id": 77,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 641,
+        "aircraft_id": 77,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 642,
+        "aircraft_id": 77,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 643,
+        "aircraft_id": 77,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 644,
+        "aircraft_id": 77,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 645,
+        "aircraft_id": 78,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 646,
+        "aircraft_id": 78,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 647,
+        "aircraft_id": 78,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 648,
+        "aircraft_id": 78,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 649,
+        "aircraft_id": 78,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 650,
+        "aircraft_id": 78,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 651,
+        "aircraft_id": 78,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 652,
+        "aircraft_id": 78,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 653,
+        "aircraft_id": 79,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 654,
+        "aircraft_id": 79,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 655,
+        "aircraft_id": 79,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 656,
+        "aircraft_id": 79,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 657,
+        "aircraft_id": 79,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 658,
+        "aircraft_id": 79,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 659,
+        "aircraft_id": 79,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 660,
+        "aircraft_id": 79,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 661,
+        "aircraft_id": 80,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 662,
+        "aircraft_id": 80,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 663,
+        "aircraft_id": 80,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 664,
+        "aircraft_id": 80,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 665,
+        "aircraft_id": 80,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 666,
+        "aircraft_id": 80,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 667,
+        "aircraft_id": 80,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 668,
+        "aircraft_id": 80,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 669,
+        "aircraft_id": 81,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 670,
+        "aircraft_id": 81,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 671,
+        "aircraft_id": 81,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 672,
+        "aircraft_id": 81,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 673,
+        "aircraft_id": 81,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 674,
+        "aircraft_id": 81,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 675,
+        "aircraft_id": 82,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 676,
+        "aircraft_id": 82,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 677,
+        "aircraft_id": 82,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 678,
+        "aircraft_id": 82,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 679,
+        "aircraft_id": 82,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 680,
+        "aircraft_id": 82,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 681,
+        "aircraft_id": 83,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 682,
+        "aircraft_id": 83,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 683,
+        "aircraft_id": 83,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 684,
+        "aircraft_id": 83,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 685,
+        "aircraft_id": 83,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 686,
+        "aircraft_id": 83,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 687,
+        "aircraft_id": 83,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 688,
+        "aircraft_id": 83,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 689,
+        "aircraft_id": 83,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 690,
+        "aircraft_id": 83,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 691,
+        "aircraft_id": 84,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 692,
+        "aircraft_id": 84,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 693,
+        "aircraft_id": 84,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 694,
+        "aircraft_id": 84,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 695,
+        "aircraft_id": 84,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 696,
+        "aircraft_id": 84,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 697,
+        "aircraft_id": 84,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 698,
+        "aircraft_id": 84,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 699,
+        "aircraft_id": 84,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 700,
+        "aircraft_id": 84,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 701,
+        "aircraft_id": 85,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 702,
+        "aircraft_id": 85,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 703,
+        "aircraft_id": 85,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 704,
+        "aircraft_id": 85,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 705,
+        "aircraft_id": 85,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 706,
+        "aircraft_id": 85,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 707,
+        "aircraft_id": 85,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 708,
+        "aircraft_id": 85,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 709,
+        "aircraft_id": 85,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 710,
+        "aircraft_id": 85,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 711,
+        "aircraft_id": 86,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 712,
+        "aircraft_id": 86,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 713,
+        "aircraft_id": 86,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 714,
+        "aircraft_id": 86,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 715,
+        "aircraft_id": 86,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 716,
+        "aircraft_id": 86,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 717,
+        "aircraft_id": 86,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 718,
+        "aircraft_id": 86,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 719,
+        "aircraft_id": 86,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 720,
+        "aircraft_id": 86,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 721,
+        "aircraft_id": 87,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 722,
+        "aircraft_id": 87,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 723,
+        "aircraft_id": 87,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 724,
+        "aircraft_id": 87,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 725,
+        "aircraft_id": 87,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 726,
+        "aircraft_id": 87,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 727,
+        "aircraft_id": 87,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 728,
+        "aircraft_id": 87,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 729,
+        "aircraft_id": 87,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 730,
+        "aircraft_id": 87,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 731,
+        "aircraft_id": 88,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 732,
+        "aircraft_id": 88,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 733,
+        "aircraft_id": 88,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 734,
+        "aircraft_id": 88,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 735,
+        "aircraft_id": 88,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 736,
+        "aircraft_id": 88,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 737,
+        "aircraft_id": 88,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 738,
+        "aircraft_id": 88,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 739,
+        "aircraft_id": 89,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 740,
+        "aircraft_id": 89,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 741,
+        "aircraft_id": 89,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 742,
+        "aircraft_id": 89,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 743,
+        "aircraft_id": 89,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 744,
+        "aircraft_id": 89,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 745,
+        "aircraft_id": 89,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 746,
+        "aircraft_id": 89,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 747,
+        "aircraft_id": 90,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 748,
+        "aircraft_id": 90,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 749,
+        "aircraft_id": 90,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 750,
+        "aircraft_id": 90,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 751,
+        "aircraft_id": 90,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 752,
+        "aircraft_id": 90,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 753,
+        "aircraft_id": 90,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 754,
+        "aircraft_id": 90,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 755,
+        "aircraft_id": 91,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 756,
+        "aircraft_id": 91,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 757,
+        "aircraft_id": 91,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 758,
+        "aircraft_id": 91,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 759,
+        "aircraft_id": 91,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 760,
+        "aircraft_id": 91,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 761,
+        "aircraft_id": 91,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 762,
+        "aircraft_id": 91,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 763,
+        "aircraft_id": 92,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 764,
+        "aircraft_id": 92,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 765,
+        "aircraft_id": 92,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 766,
+        "aircraft_id": 92,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 767,
+        "aircraft_id": 92,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 768,
+        "aircraft_id": 92,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 769,
+        "aircraft_id": 93,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 770,
+        "aircraft_id": 93,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 771,
+        "aircraft_id": 93,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 772,
+        "aircraft_id": 93,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 773,
+        "aircraft_id": 93,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 774,
+        "aircraft_id": 93,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 775,
+        "aircraft_id": 93,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 776,
+        "aircraft_id": 93,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 777,
+        "aircraft_id": 94,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 778,
+        "aircraft_id": 94,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 779,
+        "aircraft_id": 94,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 780,
+        "aircraft_id": 94,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 781,
+        "aircraft_id": 94,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 782,
+        "aircraft_id": 94,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 783,
+        "aircraft_id": 94,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 784,
+        "aircraft_id": 94,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 785,
+        "aircraft_id": 95,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 786,
+        "aircraft_id": 95,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 787,
+        "aircraft_id": 95,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 788,
+        "aircraft_id": 95,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 789,
+        "aircraft_id": 95,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 790,
+        "aircraft_id": 95,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 791,
+        "aircraft_id": 95,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 792,
+        "aircraft_id": 95,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 793,
+        "aircraft_id": 95,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 794,
+        "aircraft_id": 95,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 795,
+        "aircraft_id": 96,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 796,
+        "aircraft_id": 96,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 797,
+        "aircraft_id": 96,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 798,
+        "aircraft_id": 96,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 799,
+        "aircraft_id": 96,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 800,
+        "aircraft_id": 96,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 801,
+        "aircraft_id": 97,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 802,
+        "aircraft_id": 97,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 803,
+        "aircraft_id": 97,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 804,
+        "aircraft_id": 97,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 805,
+        "aircraft_id": 97,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 806,
+        "aircraft_id": 97,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 807,
+        "aircraft_id": 97,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 808,
+        "aircraft_id": 97,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 809,
+        "aircraft_id": 98,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 810,
+        "aircraft_id": 98,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 811,
+        "aircraft_id": 98,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 812,
+        "aircraft_id": 98,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 813,
+        "aircraft_id": 98,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 814,
+        "aircraft_id": 98,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 815,
+        "aircraft_id": 98,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 816,
+        "aircraft_id": 98,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 817,
+        "aircraft_id": 99,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 818,
+        "aircraft_id": 99,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 819,
+        "aircraft_id": 99,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 820,
+        "aircraft_id": 99,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 821,
+        "aircraft_id": 99,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 822,
+        "aircraft_id": 99,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 823,
+        "aircraft_id": 99,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 824,
+        "aircraft_id": 99,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 825,
+        "aircraft_id": 99,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 826,
+        "aircraft_id": 99,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 827,
+        "aircraft_id": 100,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 828,
+        "aircraft_id": 100,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 829,
+        "aircraft_id": 100,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 830,
+        "aircraft_id": 100,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 831,
+        "aircraft_id": 100,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 832,
+        "aircraft_id": 100,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 833,
+        "aircraft_id": 100,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 834,
+        "aircraft_id": 100,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 835,
+        "aircraft_id": 101,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 836,
+        "aircraft_id": 101,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 837,
+        "aircraft_id": 101,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 838,
+        "aircraft_id": 101,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 839,
+        "aircraft_id": 101,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 840,
+        "aircraft_id": 101,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 841,
+        "aircraft_id": 101,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 842,
+        "aircraft_id": 101,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 843,
+        "aircraft_id": 102,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 844,
+        "aircraft_id": 102,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 845,
+        "aircraft_id": 102,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 846,
+        "aircraft_id": 102,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 847,
+        "aircraft_id": 102,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 848,
+        "aircraft_id": 102,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 849,
+        "aircraft_id": 102,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 850,
+        "aircraft_id": 102,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 851,
+        "aircraft_id": 103,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 852,
+        "aircraft_id": 103,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 853,
+        "aircraft_id": 103,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 854,
+        "aircraft_id": 103,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 855,
+        "aircraft_id": 103,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 856,
+        "aircraft_id": 103,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 857,
+        "aircraft_id": 103,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 858,
+        "aircraft_id": 103,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 859,
+        "aircraft_id": 104,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 860,
+        "aircraft_id": 104,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 861,
+        "aircraft_id": 104,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 862,
+        "aircraft_id": 104,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 863,
+        "aircraft_id": 104,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 864,
+        "aircraft_id": 104,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 865,
+        "aircraft_id": 104,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 866,
+        "aircraft_id": 104,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 867,
+        "aircraft_id": 104,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 868,
+        "aircraft_id": 104,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 869,
+        "aircraft_id": 105,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 870,
+        "aircraft_id": 105,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 871,
+        "aircraft_id": 105,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 872,
+        "aircraft_id": 105,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 873,
+        "aircraft_id": 105,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 874,
+        "aircraft_id": 105,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 875,
+        "aircraft_id": 105,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 876,
+        "aircraft_id": 105,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 877,
+        "aircraft_id": 106,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 878,
+        "aircraft_id": 106,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 879,
+        "aircraft_id": 106,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 880,
+        "aircraft_id": 106,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 881,
+        "aircraft_id": 106,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 882,
+        "aircraft_id": 106,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 883,
+        "aircraft_id": 106,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 884,
+        "aircraft_id": 106,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 885,
+        "aircraft_id": 107,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 886,
+        "aircraft_id": 107,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 887,
+        "aircraft_id": 107,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 888,
+        "aircraft_id": 107,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 889,
+        "aircraft_id": 107,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 890,
+        "aircraft_id": 107,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 891,
+        "aircraft_id": 107,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 892,
+        "aircraft_id": 107,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 893,
+        "aircraft_id": 107,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 894,
+        "aircraft_id": 107,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 895,
+        "aircraft_id": 108,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 896,
+        "aircraft_id": 108,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 897,
+        "aircraft_id": 108,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 898,
+        "aircraft_id": 108,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 899,
+        "aircraft_id": 108,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 900,
+        "aircraft_id": 108,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 901,
+        "aircraft_id": 108,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 902,
+        "aircraft_id": 108,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 903,
+        "aircraft_id": 108,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 904,
+        "aircraft_id": 108,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 905,
+        "aircraft_id": 109,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 906,
+        "aircraft_id": 109,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 907,
+        "aircraft_id": 109,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 908,
+        "aircraft_id": 109,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 909,
+        "aircraft_id": 109,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 910,
+        "aircraft_id": 109,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 911,
+        "aircraft_id": 109,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 912,
+        "aircraft_id": 109,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 913,
+        "aircraft_id": 109,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 914,
+        "aircraft_id": 109,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 915,
+        "aircraft_id": 110,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 916,
+        "aircraft_id": 110,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 917,
+        "aircraft_id": 110,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 918,
+        "aircraft_id": 110,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 919,
+        "aircraft_id": 110,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 920,
+        "aircraft_id": 110,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 921,
+        "aircraft_id": 110,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 922,
+        "aircraft_id": 110,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 923,
+        "aircraft_id": 110,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 924,
+        "aircraft_id": 110,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 925,
+        "aircraft_id": 111,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 926,
+        "aircraft_id": 111,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 927,
+        "aircraft_id": 111,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 928,
+        "aircraft_id": 111,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 929,
+        "aircraft_id": 111,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 930,
+        "aircraft_id": 111,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 931,
+        "aircraft_id": 111,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 932,
+        "aircraft_id": 111,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 933,
+        "aircraft_id": 111,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 934,
+        "aircraft_id": 111,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 935,
+        "aircraft_id": 112,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 936,
+        "aircraft_id": 112,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 937,
+        "aircraft_id": 112,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 938,
+        "aircraft_id": 112,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 939,
+        "aircraft_id": 112,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 940,
+        "aircraft_id": 112,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 941,
+        "aircraft_id": 112,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 942,
+        "aircraft_id": 112,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 943,
+        "aircraft_id": 112,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 944,
+        "aircraft_id": 112,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 945,
+        "aircraft_id": 113,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 946,
+        "aircraft_id": 113,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 947,
+        "aircraft_id": 113,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 948,
+        "aircraft_id": 113,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 949,
+        "aircraft_id": 113,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 950,
+        "aircraft_id": 113,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 951,
+        "aircraft_id": 113,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 952,
+        "aircraft_id": 113,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 953,
+        "aircraft_id": 113,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 954,
+        "aircraft_id": 113,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 955,
+        "aircraft_id": 114,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 956,
+        "aircraft_id": 114,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 957,
+        "aircraft_id": 114,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 958,
+        "aircraft_id": 114,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 959,
+        "aircraft_id": 114,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 960,
+        "aircraft_id": 114,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 961,
+        "aircraft_id": 114,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 962,
+        "aircraft_id": 114,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 963,
+        "aircraft_id": 114,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 964,
+        "aircraft_id": 114,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 965,
+        "aircraft_id": 115,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 966,
+        "aircraft_id": 115,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 967,
+        "aircraft_id": 115,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 968,
+        "aircraft_id": 115,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 969,
+        "aircraft_id": 115,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 970,
+        "aircraft_id": 115,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 971,
+        "aircraft_id": 115,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 972,
+        "aircraft_id": 115,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 973,
+        "aircraft_id": 115,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 974,
+        "aircraft_id": 115,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 975,
+        "aircraft_id": 116,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 976,
+        "aircraft_id": 116,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 977,
+        "aircraft_id": 116,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 978,
+        "aircraft_id": 116,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 979,
+        "aircraft_id": 116,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 980,
+        "aircraft_id": 116,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 981,
+        "aircraft_id": 116,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 982,
+        "aircraft_id": 116,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 983,
+        "aircraft_id": 116,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 984,
+        "aircraft_id": 116,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 985,
+        "aircraft_id": 117,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 986,
+        "aircraft_id": 117,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 987,
+        "aircraft_id": 117,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 988,
+        "aircraft_id": 117,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 989,
+        "aircraft_id": 117,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 990,
+        "aircraft_id": 117,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 991,
+        "aircraft_id": 117,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 992,
+        "aircraft_id": 117,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 993,
+        "aircraft_id": 117,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 994,
+        "aircraft_id": 117,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 995,
+        "aircraft_id": 118,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 996,
+        "aircraft_id": 118,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 997,
+        "aircraft_id": 118,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 998,
+        "aircraft_id": 118,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 999,
+        "aircraft_id": 118,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1000,
+        "aircraft_id": 118,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1001,
+        "aircraft_id": 118,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1002,
+        "aircraft_id": 118,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1003,
+        "aircraft_id": 118,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1004,
+        "aircraft_id": 118,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1005,
+        "aircraft_id": 119,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1006,
+        "aircraft_id": 119,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1007,
+        "aircraft_id": 119,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1008,
+        "aircraft_id": 119,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1009,
+        "aircraft_id": 119,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1010,
+        "aircraft_id": 119,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1011,
+        "aircraft_id": 120,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1012,
+        "aircraft_id": 120,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1013,
+        "aircraft_id": 120,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1014,
+        "aircraft_id": 120,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1015,
+        "aircraft_id": 120,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1016,
+        "aircraft_id": 120,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1017,
+        "aircraft_id": 121,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1018,
+        "aircraft_id": 121,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1019,
+        "aircraft_id": 121,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1020,
+        "aircraft_id": 121,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1021,
+        "aircraft_id": 121,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1022,
+        "aircraft_id": 121,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1023,
+        "aircraft_id": 122,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1024,
+        "aircraft_id": 122,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1025,
+        "aircraft_id": 122,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1026,
+        "aircraft_id": 122,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1027,
+        "aircraft_id": 122,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1028,
+        "aircraft_id": 122,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1029,
+        "aircraft_id": 123,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1030,
+        "aircraft_id": 123,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1031,
+        "aircraft_id": 123,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1032,
+        "aircraft_id": 123,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1033,
+        "aircraft_id": 123,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1034,
+        "aircraft_id": 123,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1035,
+        "aircraft_id": 123,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1036,
+        "aircraft_id": 123,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1037,
+        "aircraft_id": 124,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1038,
+        "aircraft_id": 124,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1039,
+        "aircraft_id": 124,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1040,
+        "aircraft_id": 124,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1041,
+        "aircraft_id": 124,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1042,
+        "aircraft_id": 124,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1043,
+        "aircraft_id": 124,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1044,
+        "aircraft_id": 124,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1045,
+        "aircraft_id": 125,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1046,
+        "aircraft_id": 125,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1047,
+        "aircraft_id": 125,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1048,
+        "aircraft_id": 125,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1049,
+        "aircraft_id": 125,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1050,
+        "aircraft_id": 125,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1051,
+        "aircraft_id": 125,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1052,
+        "aircraft_id": 125,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1053,
+        "aircraft_id": 126,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1054,
+        "aircraft_id": 126,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1055,
+        "aircraft_id": 126,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1056,
+        "aircraft_id": 126,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1057,
+        "aircraft_id": 126,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1058,
+        "aircraft_id": 126,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1059,
+        "aircraft_id": 126,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1060,
+        "aircraft_id": 126,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1061,
+        "aircraft_id": 126,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1062,
+        "aircraft_id": 126,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1063,
+        "aircraft_id": 127,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1064,
+        "aircraft_id": 127,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1065,
+        "aircraft_id": 127,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1066,
+        "aircraft_id": 127,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1067,
+        "aircraft_id": 127,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1068,
+        "aircraft_id": 127,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1069,
+        "aircraft_id": 128,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1070,
+        "aircraft_id": 128,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1071,
+        "aircraft_id": 128,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1072,
+        "aircraft_id": 128,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1073,
+        "aircraft_id": 128,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1074,
+        "aircraft_id": 128,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1075,
+        "aircraft_id": 128,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1076,
+        "aircraft_id": 128,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1077,
+        "aircraft_id": 128,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1078,
+        "aircraft_id": 128,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1079,
+        "aircraft_id": 129,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1080,
+        "aircraft_id": 129,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1081,
+        "aircraft_id": 129,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1082,
+        "aircraft_id": 129,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1083,
+        "aircraft_id": 129,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1084,
+        "aircraft_id": 129,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1085,
+        "aircraft_id": 130,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1086,
+        "aircraft_id": 130,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1087,
+        "aircraft_id": 130,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1088,
+        "aircraft_id": 130,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1089,
+        "aircraft_id": 130,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1090,
+        "aircraft_id": 130,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1091,
+        "aircraft_id": 130,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1092,
+        "aircraft_id": 130,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1093,
+        "aircraft_id": 130,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1094,
+        "aircraft_id": 130,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1095,
+        "aircraft_id": 131,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1096,
+        "aircraft_id": 131,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1097,
+        "aircraft_id": 131,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1098,
+        "aircraft_id": 131,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1099,
+        "aircraft_id": 131,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1100,
+        "aircraft_id": 131,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1101,
+        "aircraft_id": 131,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1102,
+        "aircraft_id": 131,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1103,
+        "aircraft_id": 131,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1104,
+        "aircraft_id": 131,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1105,
+        "aircraft_id": 132,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1106,
+        "aircraft_id": 132,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1107,
+        "aircraft_id": 132,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1108,
+        "aircraft_id": 132,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1109,
+        "aircraft_id": 132,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1110,
+        "aircraft_id": 132,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1111,
+        "aircraft_id": 132,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1112,
+        "aircraft_id": 132,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1113,
+        "aircraft_id": 132,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1114,
+        "aircraft_id": 132,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1115,
+        "aircraft_id": 133,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1116,
+        "aircraft_id": 133,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1117,
+        "aircraft_id": 133,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1118,
+        "aircraft_id": 133,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1119,
+        "aircraft_id": 133,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 1120,
+        "aircraft_id": 133,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1121,
+        "aircraft_id": 133,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1122,
+        "aircraft_id": 133,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1123,
+        "aircraft_id": 133,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1124,
+        "aircraft_id": 133,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1125,
+        "aircraft_id": 134,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1126,
+        "aircraft_id": 134,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1127,
+        "aircraft_id": 134,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1128,
+        "aircraft_id": 134,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1129,
+        "aircraft_id": 134,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 1130,
+        "aircraft_id": 134,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1131,
+        "aircraft_id": 134,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1132,
+        "aircraft_id": 134,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1133,
+        "aircraft_id": 134,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1134,
+        "aircraft_id": 134,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1135,
+        "aircraft_id": 135,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1136,
+        "aircraft_id": 135,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1137,
+        "aircraft_id": 135,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1138,
+        "aircraft_id": 135,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1139,
+        "aircraft_id": 135,
+        "seat_class_id": 1,
+        "seat_name": "B005"
+    },
+    {
+        "id": 1140,
+        "aircraft_id": 135,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1141,
+        "aircraft_id": 135,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1142,
+        "aircraft_id": 135,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1143,
+        "aircraft_id": 135,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1144,
+        "aircraft_id": 135,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1145,
+        "aircraft_id": 136,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1146,
+        "aircraft_id": 136,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1147,
+        "aircraft_id": 136,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1148,
+        "aircraft_id": 136,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1149,
+        "aircraft_id": 136,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1150,
+        "aircraft_id": 136,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1151,
+        "aircraft_id": 136,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1152,
+        "aircraft_id": 136,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1153,
+        "aircraft_id": 136,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1154,
+        "aircraft_id": 136,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1155,
+        "aircraft_id": 137,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1156,
+        "aircraft_id": 137,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1157,
+        "aircraft_id": 137,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1158,
+        "aircraft_id": 137,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1159,
+        "aircraft_id": 137,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1160,
+        "aircraft_id": 137,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1161,
+        "aircraft_id": 137,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1162,
+        "aircraft_id": 137,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1163,
+        "aircraft_id": 137,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1164,
+        "aircraft_id": 137,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1165,
+        "aircraft_id": 138,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1166,
+        "aircraft_id": 138,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1167,
+        "aircraft_id": 138,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1168,
+        "aircraft_id": 138,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1169,
+        "aircraft_id": 138,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1170,
+        "aircraft_id": 138,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1171,
+        "aircraft_id": 138,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1172,
+        "aircraft_id": 138,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1173,
+        "aircraft_id": 138,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1174,
+        "aircraft_id": 138,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1175,
+        "aircraft_id": 139,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1176,
+        "aircraft_id": 139,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1177,
+        "aircraft_id": 139,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1178,
+        "aircraft_id": 139,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1179,
+        "aircraft_id": 139,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1180,
+        "aircraft_id": 139,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1181,
+        "aircraft_id": 139,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1182,
+        "aircraft_id": 139,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1183,
+        "aircraft_id": 139,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1184,
+        "aircraft_id": 139,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1185,
+        "aircraft_id": 140,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1186,
+        "aircraft_id": 140,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1187,
+        "aircraft_id": 140,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1188,
+        "aircraft_id": 140,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1189,
+        "aircraft_id": 140,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1190,
+        "aircraft_id": 140,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1191,
+        "aircraft_id": 140,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1192,
+        "aircraft_id": 140,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1193,
+        "aircraft_id": 140,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1194,
+        "aircraft_id": 140,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1195,
+        "aircraft_id": 141,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1196,
+        "aircraft_id": 141,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1197,
+        "aircraft_id": 141,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1198,
+        "aircraft_id": 141,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1199,
+        "aircraft_id": 141,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1200,
+        "aircraft_id": 141,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1201,
+        "aircraft_id": 141,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1202,
+        "aircraft_id": 141,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1203,
+        "aircraft_id": 142,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1204,
+        "aircraft_id": 142,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1205,
+        "aircraft_id": 142,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1206,
+        "aircraft_id": 142,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1207,
+        "aircraft_id": 142,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1208,
+        "aircraft_id": 142,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1209,
+        "aircraft_id": 142,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1210,
+        "aircraft_id": 142,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1211,
+        "aircraft_id": 143,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1212,
+        "aircraft_id": 143,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1213,
+        "aircraft_id": 143,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1214,
+        "aircraft_id": 143,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1215,
+        "aircraft_id": 143,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1216,
+        "aircraft_id": 143,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1217,
+        "aircraft_id": 144,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1218,
+        "aircraft_id": 144,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1219,
+        "aircraft_id": 144,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1220,
+        "aircraft_id": 144,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1221,
+        "aircraft_id": 144,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1222,
+        "aircraft_id": 144,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1223,
+        "aircraft_id": 144,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1224,
+        "aircraft_id": 144,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1225,
+        "aircraft_id": 145,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1226,
+        "aircraft_id": 145,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1227,
+        "aircraft_id": 145,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1228,
+        "aircraft_id": 145,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1229,
+        "aircraft_id": 145,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1230,
+        "aircraft_id": 145,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1231,
+        "aircraft_id": 145,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1232,
+        "aircraft_id": 145,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1233,
+        "aircraft_id": 145,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1234,
+        "aircraft_id": 145,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    },
+    {
+        "id": 1235,
+        "aircraft_id": 146,
+        "seat_class_id": 1,
+        "seat_name": "B001"
+    },
+    {
+        "id": 1236,
+        "aircraft_id": 146,
+        "seat_class_id": 1,
+        "seat_name": "B002"
+    },
+    {
+        "id": 1237,
+        "aircraft_id": 146,
+        "seat_class_id": 1,
+        "seat_name": "B003"
+    },
+    {
+        "id": 1238,
+        "aircraft_id": 146,
+        "seat_class_id": 1,
+        "seat_name": "B004"
+    },
+    {
+        "id": 1239,
+        "aircraft_id": 146,
+        "seat_class_id": 2,
+        "seat_name": "E001"
+    },
+    {
+        "id": 1240,
+        "aircraft_id": 146,
+        "seat_class_id": 2,
+        "seat_name": "E002"
+    },
+    {
+        "id": 1241,
+        "aircraft_id": 146,
+        "seat_class_id": 2,
+        "seat_name": "E003"
+    },
+    {
+        "id": 1242,
+        "aircraft_id": 146,
+        "seat_class_id": 2,
+        "seat_name": "E004"
+    },
+    {
+        "id": 1243,
+        "aircraft_id": 146,
+        "seat_class_id": 2,
+        "seat_name": "E005"
+    },
+    {
+        "id": 1244,
+        "aircraft_id": 146,
+        "seat_class_id": 2,
+        "seat_name": "E006"
+    }
+]

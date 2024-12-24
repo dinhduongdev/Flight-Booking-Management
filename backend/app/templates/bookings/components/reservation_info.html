@@ -1,0 +1,30 @@
+{% macro render_reservation_info(reservation, class="") %}
+    <div class="{{class}}">
+        <div class="d-flex align-items-center">
+            <span><b>Reservation ID:</b> {{reservation.id}}</span>
+        </div>
+        <div class="selected_seat_info">
+            <div class="d-flex align-items-center">
+                <span><b>Seat:</b> <span class="seat_name">{{reservation.flight_seat.aircraft_seat.seat_name}}</span></span>
+            </div>
+            <div class="d-flex align-items-center">
+                <span><b>Price:</b> {{ "{:,}".format(reservation.flight_seat.price) }} {{reservation.flight_seat.currency}}</span>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            {% set owner_censored_citizen_id = ("*" * 9) + reservation.owner.citizen_id[-3:] %}
+            <span><b>Passenger:</b> {{reservation.owner.full_name}} ({{owner_censored_citizen_id}})</span>
+        </div>
+        <!-- If user didnt reservate on their own -->
+        {% if reservation.owner_id != reservation.author_id %}
+            <div class="d-flex align-items-center">
+                {% set author_censored_citizen_id = ("*" * 9) + reservation.author.citizen_id[-3:] %}
+                <span><b>Author:</b> {{reservation.author.full_name}} ({{author_censored_citizen_id}})</span>
+            </div>
+        {% endif %}
+
+        <div class="d-flex align-items-center">
+            <span><b>Created at:</b> {{reservation.created_at.strftime('%d/%m/%Y - %H:%M:%S')}}</span>
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,62 @@
+{% from "flights/components/flight_route.html" import render_flight_route %}
+{% from "flights/components/flight_info.html" import render_flight_info %}
+
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container mt-5 min-vh-100">
+    <form class="card" action="" method="post">
+        <div class="card-header">
+            <div class="row">
+                {{ render_flight_route(flight, class='col-12 col-sm-6') }}
+                {{ render_flight_info(flight, class='col-12 col-sm-6') }}    
+            </div>
+        </div>
+        <div class="card-body border-bottom">
+            <h3 class="card-title fw-bold">Booking Details</h3>
+            <div><i class="fa-solid fa-paper-plane me-1"></i><b>Seat: </b><span class="fs-5">{{seat.aircraft_seat.seat_name}}</span></div>
+            <div><i class="fa-solid fa-user me-1"></i><b>Owner: </b><span class="fs-5">{{owner.full_name}}</span></div>
+            <div><i class="fa-solid fa-id-card me-1"></i></i><b>Owner's citizen ID: </b><span class="fs-5">{{owner.citizen_id}}</span></div>
+            <div><i class="fa-solid fa-phone me-1"></i><b>Owner's phone: </b><span class="fs-5">{{owner.phone}}</span></div>
+            <div><i class="fa-solid fa-envelope me-1"></i><b>Owner's email: </b><span class="fs-5">{{owner.email}}</span></div>
+            {% if owner.id != author.id %}
+                <div><i class="fa-solid fa-user-pen me-1"></i><b>Author: </b><span class="fs-5">{{author.full_name}}</span></div>
+            {% endif %}
+            <div class="alert alert-success d-flex align-items-center mt-2" role="alert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-circle me-2" viewBox="0 0 16 16">
+                    <path d="M15.854 8a7.854 7.854 0 1 1-15.708 0 7.854 7.854 0 0 1 15.708 0zM8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M10.97 5.97a.235.235 0 0 1 .017.022L6.477 10.514 4.354 8.39a.5.5 0 1 1 .707-.707L6.477 9.1l4.243-4.243a.5.5 0 0 1 .707.707l-4.243 4.243-.07.07a.235.235 0 0 1-.017-.022z"/>
+                </svg>
+                <div>You will soon receive reservation info via {{owner.email}}.</div>
+            </div>
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- ~~~~~~~~~~The staff can create reservation along with payment (sell offline) ~~~~~~~~-->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        {% if current_user.role.value != 4 %}
+            <div class="card-body">
+                <h3 class="card-title fw-bold">Payment type</h3>
+                <div class="form-check fs-5">
+                    <input class="form-check-input" type="radio" name="payment_type" id="exampleRadios1" value="cash" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        <i class="fa-solid fa-money-bill-wave me-1"></i>Cash (Create reservation along with payment)
+                    </label>
+                </div>
+                <div class="form-check fs-5">
+                    <input class="form-check-input" type="radio" name="payment_type" id="exampleRadios2" value="card">
+                    <label class="form-check-label" for="exampleRadios2">
+                        <i class="fa-solid fa-credit-card me-1"></i>Online payment (Create reservation only)
+                    </label>
+                </div>
+            </div>
+        {% endif %}
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Confirm</button>
+            <a href="{{ request.referrer }}" class="btn btn-primary-invert">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+[
+  {
+    "key": "customer_min_booking_time",
+    "value": 720,
+    "description": "Minimum time (in minutes) a customer must book before the flight departure"
+  },
+  {
+    "key": "staff_min_booking_time",
+    "value": 240,
+    "description": "Minimum time (in minutes) staff must book before the flight departure"
+  },
+  {
+    "key": "max_airports",
+    "value": 10,
+    "description": "Maximum number of airports allowed in the system"
+  },
+  {
+    "key": "min_flight_duration",
+    "value": 30,
+    "description": "Minimum duration (in minutes) for a flight"
+  },
+  {
+    "key": "max_flight_duration",
+    "value": 9999999,
+    "description": "Maximum duration (in minutes) for a flight"
+  },
+  {
+    "key": "min_stopover_duration",
+    "value": 20,
+    "description": "Minimum duration (in minutes) for a stopover"
+  },
+  {
+    "key": "max_stopover_duration",
+    "value": 9999999,
+    "description": "Maximum duration (in minutes) for a stopover"
+  },
+  {
+    "key": "max_stopover_airports",
+    "value": 2,
+    "description": "Maximum number of stopover airports allowed in a flight"
+  }
+]

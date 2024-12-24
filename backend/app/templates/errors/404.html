@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    Wrong page
-  </body>
-</html>
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container min-vh-100">
+  <img class="mt-5 mx-auto d-block col-8 col-md-6" src="{{url_for('static',filename='images/errors/404.png')}}" alt="404 image">
+  <a href="{{url_for('main.home')}}" class="btn btn-primary btn-lg mt-5 mx-auto col-8 col-md-6 d-block">Go to home</a>
+</div>
+{% endblock content %}

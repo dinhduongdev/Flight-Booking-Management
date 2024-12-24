@@ -1,0 +1,52 @@
+{% extends "user/account.html" %}
+<!--  -->
+{% block avatar_col %}
+<a href="{{url_for('auth.update_account')}}" class="btn btn-primary"
+  >Update account</a
+>
+{% endblock avatar_col %}
+<!--  -->
+{% block main_col %}
+<div class="card mb-2">
+  <div class="card-header fs-3">Personal info</div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="mb-0">Full name</p>
+      </div>
+      <div class="col-sm-8">
+        <p class="mb-0">
+          {{ current_user.first_name + " " + current_user.last_name}}
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="mb-0">Email</p>
+      </div>
+      <div class="col-sm-8">
+        <p class="mb-0">{{ current_user.email }}</p>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="mb-0">Citizen ID</p>
+      </div>
+      <div class="col-sm-8">
+        <p class="mb-0">{{ current_user.citizen_id }}</p>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="mb-0">Phone</p>
+      </div>
+      <div class="col-sm-8">
+        <p class="mb-0">{{ current_user.phone }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock main_col %}

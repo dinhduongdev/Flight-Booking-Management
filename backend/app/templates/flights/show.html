@@ -1,0 +1,93 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 mx-auto">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Choose route:</h2>
+                <form method="get" action="/schedule" class="d-flex">
+                    <div class="form-group">
+                        <select class="selectpicker" data-live-search="true" name="kw_depart_airport">
+                            <option value="">-- Depart Airport --</option>
+                            {% for a in airports %}
+                            <option value="{{ a.id }}" {% if kw_depart_airport == a.id %}selected{% endif %}>{{ a.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group ms-2">
+                        <select class="selectpicker" data-live-search="true" name="kw_arrive_airport">
+                            <option value="">-- Arrive Airport --</option>
+                            {% for a in airports %}
+                            <option value="{{ a.id }}" {% if kw_arrive_airport == a.id %}selected{% endif %}>{{ a.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <button class="btn btn-primary ms-2" type="submit"><i class="fas fa-search"></i></button>
+                    <a href="/schedule" class="btn btn-secondary ms-2" type="submit"><i
+                            class="fa-solid fa-arrow-rotate-right"></i></a>
+                </form>
+            </div>
+            {% if routes %}
+            <div class="p-4 my-3 border border-2 rounded-5 bg-white">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Depart Airport</th>
+                            <th>Arrive Airport</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        {% for r in routes %}
+                        <tr>
+                            <td>{{r.id}}</td>
+                            <td>{{r.depart_airport.name}}</td>
+                            <td>{{r.arrive_airport.name}}</td>
+                            <td>
+                                <a href="/schedule/{{r.id}}" class="btn btn-primary">Choose <i
+                                        class='fas fa-angle-right'></i></a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link {% if current_page == 1 %}disabled{% endif %}"
+                                href="/schedule?page={{current_page - 1}}{{ query_string }}" aria-label="Previous">
+                                <span aria-hidden="true"><i class='fas fa-angle-left'></i></span>
+                            </a>
+                        </li>
+                        {% for page in range(1, pages + 1) %}
+                        <li class="page-item"><a class="page-link {% if page == current_page %}active{% endif %}"
+                                href="/schedule?page={{page}}{{ query_string }}">{{page}}</a>
+                        </li>
+                        {% endfor %}
+                        <li class="page-item">
+                            <a class="page-link {% if current_page == pages %}disabled{% endif %}"
+                                href="/schedule?page={{current_page + 1}}{{ query_string }}" aria-label="Next">
+                                <span aria-hidden="true"> <i class='fas fa-angle-right'></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            {% else %}
+            <div class="p-4 my-3 border border-2 rounded-5 bg-white">
+                <h3 class="text-center">Nothing</h3>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<style>
+    footer {
+        margin-top: 20%;
+    }
+</style>
+{% endblock content %}

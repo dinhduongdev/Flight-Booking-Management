@@ -1,9 +1,9 @@
-.header {
-  background: rgba(225, 225, 225, 0.4);
-  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.25);
-  height: 64px;
-  position: sticky;
-  top: 0;
+/* Apply Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .header_brand {
@@ -11,5 +11,483 @@
 }
 
 main {
-  height: 1000px;
 }
+ul li {
+  list-style: none;
+}
+
+/*================================ footer ================================*/
+footer {
+  background-color: #121212; /* Màu nền tối */
+}
+
+footer h6 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer ul li a {
+  font-size: 14px;
+  color: #ffffff; /* Màu mặc định */
+  transition: color 0.3s, background-color 0.3s; /* Thêm hiệu ứng cho nền */
+}
+
+footer ul li a:hover {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.1); /* Thêm nền khi hover */
+  border-radius: 4px; /* Thêm bo góc cho liên kết khi hover */
+}
+
+footer hr {
+  border-top: 1px solid #444;
+}
+.social {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.social a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social:hover {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.custom-hr {
+  border: 0;
+  height: 1px;
+  background-color: gray;
+  opacity: 1;
+}
+
+/* ================================ end footer================================  */
+
+/* ================================Override Button================================ */
+
+.btn-primary {
+  background-color: #223a60;
+  transition: background-color 0.3s ease; /* Smooth transition for the color change */
+  border: 2px solid #223a60;
+}
+
+.btn-primary:hover {
+  background-color: #223a60ad;
+  border-color: transparent;
+}
+.btn-primary-invert {
+  background-color: transparent;
+  transition: background-color 0.3s ease; /* Smooth transition for the color change */
+  border: 2px solid #223a60;
+  color: #223a60;
+}
+.btn-primary-invert:hover {
+  background-color: #223a60b0;
+  color: white;
+}
+.nav-link {
+  color: #283841;
+  font-weight: 400; /* Adjusted to a valid weight */
+}
+
+.active {
+  color: #223a60; /* Changes the active link color */
+  font-weight: 600; /* Changes the active link weight */
+}
+
+/* Navbar trong suốt khi không cuộn */
+.navbar-transparent {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+/* Khi cuộn trang, navbar sẽ trở nên sticky và có nền màu */
+.navbar.sticky {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Thêm hiệu ứng shadow khi navbar trở thành sticky */
+.navbar.sticky {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-home {
+  /* position: absolute;
+  top: 30px;
+  left: 20px;
+  right: 20px; */
+  transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease,
+    right 0.5s ease; /* Chuyển tiếp mượt mà */
+  z-index: 9999;
+}
+
+.navbar-home.fixed {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(0); /* Di chuyển navbar khi cuộn */
+}
+
+.navbar-home.not-fixed {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+  transform: translateY(10px); /* Di chuyển navbar khi không cố định */
+}
+
+.navbar__account-menu {
+  right: 0;
+  left: auto !important;
+}
+.navbar__account-menu.show {
+  display: block !important;
+}
+
+.avatar-circle {
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  background-color: white;
+}
+/* .slider{
+  position: relative;
+
+}
+.content{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: black;
+} */
+
+.noti-panel {
+  top: 100px;
+}
+
+.noti-panel > .toast-container{
+  transition: right .5s ease; /* only transition top property */
+  right: -100%;
+}
+
+.noti-panel .toast-header.alert-danger {
+  background-color: var(--bs-danger-bg-subtle);
+  color: var(--bs-danger-text-emphasis);
+  border-color: var(--bs-danger-border-subtle);
+}
+.noti-panel .toast-header.alert-success {
+  background-color: var(--bs-success-bg-subtle);
+  color: var(--bs-success-text-emphasis);
+  border-color: var(--bs-success-border-subtle);
+}
+.noti-panel .toast-header.alert-info {
+  background-color: var(--bs-info-bg-subtle);
+  color: var(--bs-info-text-emphasis);
+  border-color: var(--bs-info-border-subtle);
+}
+.noti-panel .toast-header.alert-warning {
+  background-color: var(--bs-warning-bg-subtle);
+  color: var(--bs-warning-text-emphasis);
+  border-color: var(--bs-warning-border-subtle);
+}
+
+.slider-layout {
+  position: relative;
+}
+
+/* Định dạng container tổng */
+.slider-content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Hình ảnh full-width */
+.slider-content-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Căn chỉnh content ở giữa */
+.slider-content-container .content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Chữ trắng để nổi bật trên nền ảnh */
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Nền đen mờ */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+.slider-content-container img {
+  width: 100%;
+  height: 600px; /* Hoặc bất kỳ giá trị cố định nào bạn muốn */
+  object-fit: cover; /* Giữ tỷ lệ ảnh nhưng cắt phần dư nếu không khớp */
+}
+
+.form-find {
+  width: 90%;
+  position: absolute;
+  bottom: 5%; /* Điều chỉnh để đưa lên trên */
+  left: 50%; /* Để căn giữa */
+  transform: translateX(-50%); /* Căn giữa tuyệt đối */
+  z-index: 999;
+}
+.find {
+  background-color: #ffff;
+  padding: 20px;
+  border-bottom-left-radius: 14px; /* Làm tròn góc trên bên trái */
+  border-top-right-radius: 14px; /* Làm tròn góc trên bên trái */
+  border-bottom-right-radius: 14px; /* Làm tròn góc trên bên trái */
+}
+
+.logo-find {
+  background-color: #ffff;
+  padding: 20px;
+
+  width: auto; /* Chiều rộng tự động theo kích thước của nội dung */
+  display: inline-block; /* Đảm bảo rằng chiều rộng phù hợp với nội dung */
+  border-top-left-radius: 14px; /* Làm tròn góc trên bên trái */
+  border-top-right-radius: 14px; /* Làm tròn góc trên bên trái */
+}
+
+/* why-choose-us */
+
+.text-pink {
+  color: #c08b7d;
+}
+.why-choose-us .card-main {
+  width: 400px;
+  height: 400px;
+}
+.image-background {
+  width: 100%;
+  height: 100%;
+}
+.card-main {
+  position: relative;
+}
+.card-sub {
+  width: 200px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  right: -20%;
+}
+.card-sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-sub .text-sub {
+  font-size: 12px;
+}
+/* end why-choose-us */
+
+/* trending destination */
+.trending-destination .card {
+  border: none;
+}
+.trending-destination .card-body {
+  transform: translateY(100%); /* Đưa ra ngoài màn hình */
+  transition: transform 0.5s ease-in-out;
+}
+
+.trending-destination .card:hover .card-body {
+  transform: translateY(0); /* Trượt lên khi di chuột */
+}
+
+/* end trending destination */
+
+/* login */
+
+.input-group input {
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  padding: 10px 15px;
+  border: 1px solid gray;
+  border-radius: 4px !important;
+}
+.input-group input[readonly] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.input-group input:focus {
+  border-color: dodgerblue;
+  box-shadow: none;
+}
+
+.input-group label {
+  position: absolute;
+  cursor: text;
+  /* top: 50%; */
+  left: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #fff;
+  padding: 0 10px;
+  color: #999;
+  transition: all 0.3s ease;
+  transform: translateY(-50%); /* Để căn chỉnh chính xác label */
+  z-index: 10;
+  top: 2em;
+}
+
+.input-group input:focus ~ label {
+  color: dodgerblue;
+  top: -5px !important;
+}
+.input-group input:not(:focus):not(:placeholder-shown) ~ label {
+  top: -5px !important;
+}
+
+.hr-or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hr-or hr {
+  flex: 1;
+  border: 0;
+  border-top: 2px solid gray;
+}
+.hr-or span {
+  padding: 0 10px;
+  color: #666;
+  font-weight: bold;
+}
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  border: 1px solid black;
+  color: black;
+}
+.social-btn:hover {
+  background-color: #ddd;
+}
+
+/* end login */
+
+.dotted-underline {
+  border-bottom: 1px dotted #000; /* Kiểu gạch chân chấm */
+  width: 100%; /* Kéo dài đường gạch chân */
+  margin-top: 4px; /* Tạo khoảng cách giữa nội dung và gạch chân */
+}
+
+/* animation  */
+/* Trạng thái ban đầu */
+.fade-left,
+.fade-right,
+.fade-opacity,
+.fade-translate {
+  opacity: 0; /* Mờ hoàn toàn */
+  transform: translateX(0); /* Trạng thái gốc cho dịch chuyển ngang */
+  transition: all 1s ease-out;
+}
+
+/* Hiển thị khi vào viewport */
+.fade-left.visible {
+  opacity: 1;
+  transform: translateX(0); /* Về vị trí ban đầu */
+}
+
+.fade-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-opacity.visible {
+  opacity: 1; /* Hiển thị rõ */
+}
+
+.fade-translate.visible {
+  opacity: 1;
+  transform: translateY(0); /* Về vị trí ban đầu */
+}
+
+/* Hiệu ứng dịch chuyển */
+.fade-left {
+  transform: translateX(-100px); /* Dịch chuyển từ trái */
+}
+
+.fade-right {
+  transform: translateX(100px); /* Dịch chuyển từ phải */
+}
+
+.fade-translate {
+  transform: translateY(100px); /* Dịch chuyển từ dưới */
+}
+
+
+/*  */
+.seat-layout {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các ghế xuống dòng nếu vượt quá chiều rộng */
+  justify-content: center; /* Căn giữa ngang các phần tử */
+}
+.seat {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; 
+  padding: 10px;
+}
+.seat:hover{
+  background-color: green;
+  color: white;
+}
+/* 
+.seat.occupied {
+  background-color: #d6d6d6;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  background-color: #e0f7fa;
+} */

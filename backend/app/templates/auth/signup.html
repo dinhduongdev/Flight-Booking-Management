@@ -1,0 +1,64 @@
+{% from "layouts/field.html" import render_field with context%}
+
+{% extends "layouts/base.html" %} {% block content %}
+<div class="container d-flex justify-content-between align-items-center vh-100">
+  <div class="card" style="width: 40rem">
+    <div class="card-body">
+      <h2 class="card-title text-start mb-4">Sign Up</h2>
+      <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <!-- ======================== Email ======================== -->
+        {{ render_field(form.email) }}
+
+        <!-- ======================== Name ======================== -->
+        <div class="row">
+          <div class="col-6">
+            <!-- ======================== First Name ======================== -->
+            {{ render_field(form.first_name) }}
+          </div>
+          <div class="col-6">
+            <!-- ======================== Last Name ======================== -->
+            {{ render_field(form.last_name) }}
+          </div>
+        </div>
+        <!-- ======================== Citizen ID ======================== -->
+        {{ render_field(form.citizen_id) }}
+        <!-- ======================== Phone ======================== -->
+        {{ render_field(form.phone) }}
+
+        <!-- ======================== Password ======================== -->
+        {{ render_field(form.password) }}
+        <!-- ======================== Confirm Password ======================== -->
+        {{ render_field(form.confirm_password) }}
+        {{ form.submit(class='btn col-12 btn-lg btn-primary') }}
+      </form>
+      <div class="hr-or my-3">
+        <hr />
+        <span>Or</span>
+        <hr />
+      </div>
+      <div class="d-flex justify-content-between text-center my-2">
+        <a
+          href="{{url_for('auth.google_login')}}"
+          class="social-btn google col-12"
+        >
+          <img
+            src="{{url_for('static',filename='images/icon/googleIcon.png')}}"
+            alt=""
+          />
+          Google
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="card ms-5 d-md-block d-none" style="width: 30rem">
+    <div class="card-body">
+      <h2 class="card-title text-start mb-4">Welcome Back</h2>
+      <p>Click the button below to log in if you already have an account.</p>
+      <a href="{{url_for('auth.login')}}" class="btn col-12 btn-primary-invert"
+        >Log in</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock content %}

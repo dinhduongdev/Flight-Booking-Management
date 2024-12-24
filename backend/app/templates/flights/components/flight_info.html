@@ -1,0 +1,16 @@
+{% macro render_flight_info(flight, class = "") %}
+<div class="{{class}}">
+    <div class="mx-auto" style="width: fit-content">
+    <div class="d-flex align-items-center">
+        <i class="fa-solid fa-clock me-1"></i>
+        <span><b>Flight duration:</b> {{flight.arrive_time - flight.depart_time}}</span>
+    </div>
+    <div >
+        <div><b>Flight ID</b>: {{flight.id}}</div>
+        <div><b>Airline</b>: {{flight.aircraft.airline.name}}</div>
+        <div><b>Aircraft</b>: {{flight.aircraft.name}}</div>
+        <a href="{{url_for('flights.showFlight', id=flight.id)}}">Flight details</a>
+    </div>
+    </div>
+</div>
+{% endmacro %}

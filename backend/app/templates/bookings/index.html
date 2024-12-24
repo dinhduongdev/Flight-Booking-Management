@@ -1,1 +1,24 @@
-<!-- Flights page -->
+{% from "bookings/components/reservation_form.html" import render_reservation_form with context%}
+
+{% extends "layouts/base.html" %}
+{% block content %}
+<div class="container mt-5 min-vh-100">
+    <h2>Booking</h2>
+    <p>Seat class: {{ seat_class.name }}</p>
+
+    <!-- Các nút ghế -->
+    <div class="d-flex align-items-center justify-content-around">
+        <div class="d-flex align-items-center gap-1">
+            <button class="btn btn-secondary">S000</button><span>Not available</span>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+            <button class="btn btn-success">S111</button><span>Chosen seat</span>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+            <button class="btn btn-outline-success">S222</button><span>Available</span>
+        </div>
+    </div>
+    {{ render_reservation_form (flight, seat_class) }}
+</div>
+
+{% endblock %}

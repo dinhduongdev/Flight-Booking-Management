@@ -1,0 +1,17 @@
+{% from "flights/components/flight_route.html" import render_flight_route %}
+{% from "flights/components/flight_info.html" import render_flight_info %}
+{% from "bookings/components/reservation_info.html" import render_reservation_info %}
+{% from "bookings/components/reservation_buttons.html" import render_reservation_buttons with context%}
+
+
+{% macro render_reservation_card(reservation, class = "") %}
+    {% set flight = reservation.flight_seat.flight %}
+    <div class="card shadow {{class}} overflow-hidden">
+        <div class="row g-0">
+            {{render_flight_route(flight, class="col-md-4 col-lg-3 p-2")}}
+            {{render_flight_info(flight, class="col-md-4 col-lg-3 p-2 border-start")}}
+            {{render_reservation_info(reservation, class="col-md-4 p-2 border-start")}}
+            {{render_reservation_buttons(reservation, class="col-lg-2 col-12")}}
+        </div>
+    </div>
+{% endmacro %}

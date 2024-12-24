@@ -1,0 +1,80 @@
+[
+
+    {
+        "email": "huy@al.com",
+        "password": "huy",
+        "role": 1,
+        "citizen_id": "1",
+        "first_name": "Huy",
+        "last_name": "Nguyen Quang",
+        "phone": "+84999999999"
+    },
+    {
+        "email": "duong@al.com",
+        "password": "duong",
+        "role": 2,
+        "citizen_id": "2",
+        "first_name": "Duong",
+        "last_name": "Pham Dinh",
+        "phone": "+84123456789"
+    },
+    {
+        "email": "huy1@al.com",
+        "password": "huy1",
+        "role": 2,
+        "citizen_id": "3",
+        "first_name": "Huy",
+        "last_name": "Van Pham Gia",
+        "phone": "+841234567891"
+    },
+    {
+        "email": "kdot@al.com",
+        "password": "kdot",
+        "role": 3,
+        "citizen_id": "123456789014",
+        "first_name": "Kendrick",
+        "last_name": "Larmar",
+        "phone": "1234567892",
+        "avatar": "https://hips.hearstapps.com/hmg-prod/images/240731-kl-hb-qdb-54458-24-0011-r5-wm-67083457658aa.png?resize=980:*"
+    },
+    {
+        "email": "cench@al.com",
+        "password": "cench",
+        "role": 3,
+        "citizen_id": "123456789015",
+        "first_name": "Central",
+        "last_name": "Cee",
+        "phone": "1234567893",
+        "avatar": "https://lastfm.freetls.fastly.net/i/u/ar0/c8b2f0bbfef12862390a393d789bcdc2.jpg"
+    },
+    {
+        "email": "ye@example.com",
+        "password": "ye",
+        "role": 4,
+        "citizen_id": "123456789016",
+        "first_name": "Kanye",
+        "last_name": "West",
+        "phone": "1234567894",
+        "avatar":"https://i.scdn.co/image/ab6761610000e5eb6e835a500e791bf9c27a422a"
+    },
+    {
+        "email": "2pac@example.com",
+        "password": "2pac",
+        "role": 4,
+        "citizen_id": "123456789017",
+        "first_name": "Tupac",
+        "last_name": "Shakur",
+        "phone": "1234567895",
+        "avatar":"https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Alleyezonme.jpg/220px-Alleyezonme.jpg"
+    },
+    {
+        "email": "tim@example.com",
+        "password": "tim",
+        "role": 4,
+        "citizen_id": "123456789018",
+        "first_name": "Tim",
+        "last_name": "Henson",
+        "phone": "1234567896",
+        "avatar":"https://guitar.com/wp-content/uploads/2022/11/Tim-Henson@2000x1500.jpg"
+    }
+]

@@ -1,0 +1,139 @@
+{% from "flights/components/flight_card.html" import render_flight_card with context %}
+
+{% extends "layouts/base.html" %} {% block content %}
+<div class="container mt-5 min-vh-100">
+  <!--  -->
+  <!-- ============================= Find panel ============================= -->
+  <!--  -->
+  <div class="card">{% include "layouts/find.html" %}</div>
+  <!--  -->
+  <!-- ============================= filter panel ============================= -->
+  <!--  -->
+  <div class="card p-4 shadow-sm d-none">
+    <div class="row">
+      <button
+        class="btn bg-warning col-1 d-flex gap-2 align-items-center justify-content-center"
+      >
+        <i class="fa-solid fa-filter"></i>
+        Filter
+      </button>
+    </div>
+
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-md-3 mb-3">
+        <label for="ticketType" class="form-label fw-bold">Loại vé</label>
+        <select class="form-select" id="ticketType" name="ticket_type">
+          <option value="" selected>Tất cả</option>
+          <option value="thuong_gia">Thương gia</option>
+          <option value="pho_thong">Phổ thông</option>
+        </select>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="budgetRange" class="form-label fw-bold"
+          >Ngân sách (VNĐ)</label
+        >
+        <input
+          type="range"
+          class="form-range"
+          id="budgetRange"
+          name="budget"
+          min="0"
+          max="20000000"
+          step="100000"
+          oninput="document.getElementById('budgetValue').innerText = this.value + ' VNĐ';"
+        />
+        <span id="budgetValue" class="text-muted">10,000,000 VNĐ</span>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label class="form-label fw-bold">Số điểm dừng</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="stop"
+            id="noStop"
+            value="0"
+          />
+          <label class="form-check-label" for="noStop"
+            >Chỉ chuyến bay thẳng</label
+          >
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="stop"
+            id="anyStop"
+            value="1"
+          />
+          <label class="form-check-label" for="anyStop">Tất cả</label>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <button class="btn btn-primary">Apply</button>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <!-- ============================= searching flight ============================= -->
+  <!--  -->
+  {% if flights %}
+    <div class="row m-3">
+      <div
+        class="d-flex justify-content-between align-items-center border-bottom pb-2"
+      >
+        <!-- Điểm đi và đến -->
+        <div class="d-flex align-items-center">
+          <!-- Điểm đi -->
+          <div class="text-center me-3">
+            <div class="fw-bold">{{route.depart_airport.code}}</div>
+            <div class="text-muted small">{{route.depart_airport}}</div>
+          </div>
+
+          <!-- Icon máy bay -->
+          <div class="me-3">
+            <i class="fa-solid fa-plane"></i>
+            <div class="dotted-underline"></div>
+          </div>
+
+          <!-- Điểm đến -->
+          <div class="text-center">
+            <div class="fw-bold">{{route.arrive_airport.code}}</div>
+            <div class="text-muted small">{{route.arrive_airport}}</div>
+          </div>
+        </div>
+
+        <!-- Ngày giờ chuyến đi -->
+        <div class="text-end">
+          <div class="fw-bold">Flights</div>
+          <div class="text-muted">{{depart_date.strftime('%d/%m/%Y')}}</div>
+        </div>
+      </div>
+    </div>
+  <!--  -->
+  <!-- ============================= flight cards ============================= -->
+  <!--  -->
+  <div class="result-flights">
+    {% for flight in flights.items %}
+      {{ render_flight_card(flight, search_time) }}
+    {% endfor %}
+  </div>
+  {% else %}
+    <!-- Thông báo khi không có chuyến bay -->
+    <div class="alert alert-secondary text-center mt-5">
+      Please search for flights
+    </div>
+  {% endif %}
+  <!--  -->
+  <!--  -->
+  <!--  -->
+  <!-- ============================= Pagination ============================= -->
+  {% if flights %}
+    {% from "layouts/pagination.html" import render_pagination with context%}
+    {{ render_pagination(flights, 'flights.searchFlights', from=route.depart_airport_id, to=route.arrive_airport_id, depart=depart_date) }}
+  {% endif %}
+</div>
+
+{% endblock content %} {% block scripts %}
+<script src="{{ url_for('static', filename='js/searchBox.js') }}"></script>
+{% endblock %}
