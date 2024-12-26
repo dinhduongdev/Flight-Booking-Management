@@ -1,13 +1,17 @@
 {% macro render_reservation_buttons(reservation, class="") %}
     {% set is_paid = reservation.is_paid() %}
     {% set is_editable = reservation.is_editable() %}
+    {% set is_sold = reservation.flight_seat.is_sold() %}
     {% set is_owner = reservation.owner_id == current_user.id %}
 
     <div class="text-white d-flex flex-fill flex-wrap {{class}}" style="min-height: 40px;">
         {% if is_paid %}
-            <a href="#" class="btn btn-success rounded-0 col-lg-12 col-10 flex-grow-1" style="align-content: center;">Show ticket</a>
-        {% elif is_editable %}
-            <a href="{{ url_for('bookings.payment', id=reservation.id) }}" class="btn btn-primary rounded-0 col-lg-12 col-5" style="align-content: center;">Pay</a>
+            <a href= "{{url_for('bookings.show_ticket', reservation_id=reservation.id)}}" class="btn btn-success rounded-0 col-lg-12 col-10 flex-grow-1" style="align-content: center;">Show ticket</a>
+        {% elif is_editable and not is_sold %}
+            <a href="{{ url_for('bookings.payment', reservation_id=reservation.id) }}" class="btn btn-primary rounded-0 col-lg-12 col-5" style="align-content: center;">Pay</a>
+            <a href="{{url_for('bookings.edit_reservation', reservation_id=reservation.id)}}" class="btn btn-warning rounded-0 col-lg-8 col-5 p-1 flex-grow-1" style="align-content: center;"><small>Pick other seat</small></a>
+        {% elif is_sold %}
+            <div class="bg-danger text-center col-lg-12 col-5" style="align-content: center;">Sold</div>
             <a href="{{url_for('bookings.edit_reservation', reservation_id=reservation.id)}}" class="btn btn-warning rounded-0 col-lg-8 col-5 p-1 flex-grow-1" style="align-content: center;"><small>Pick other seat</small></a>
         {% else %}
             <div class="bg-secondary text-center col-lg-12 col-5" style="align-content: center;">Abandoned</div>

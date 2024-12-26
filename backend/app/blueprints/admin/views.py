@@ -4,9 +4,10 @@ from flask_login import current_user
 from flask_admin import AdminIndexView, BaseView, Admin, expose
 from datetime import datetime as dt
 
-from app import app, db
+from app import app, db, bcrypt
 from app.blueprints.auth.models import User
 from app.blueprints.auth.models import UserRole
+from app.blueprints.auth import dao as auth_dao
 from app.blueprints.auth.routes import logout_process
 from app.blueprints.flights.models import *
 from app.blueprints.flights import dao as flight_dao
@@ -24,13 +25,10 @@ class AdminView(AuthenticatedView):
 
 
 class DashboardAdmin(AdminIndexView, AdminView):
-    @expose("/", methods=["GET", "POST"])
+    @expose("/", methods=["GET"])
     def index(self):
-        year = request.args.get('year', type=int, default=2024)  
-        month = request.args.get('month', type=int, default=12)  
-        flight_stats = flight_dao.get_flight_count_by_route(year, month)
-        
-        return self.render('admin/dashboard.html', stats=flight_stats, year=year, month=month)
+        return self.render("admin/dashboard.html", current_user=current_user)
+
 
 class CountryAdmin(ModelView, AdminView):
     column_list = ("id", "name", "code")
@@ -62,6 +60,41 @@ class UserView(ModelView, AdminView):
         "role",
     )
     column_searchable_list = ["first_name", "last_name", "email", "citizen_id", "phone"]
+
+    def create_model(self, form):
+        if auth_dao.get_user_by_email(form.email.data):
+            form.email.errors.append("Email already exists!")
+            return False
+        if auth_dao.get_user_by_citizen_id(form.citizen_id.data):
+            form.citizen_id.errors.append("Citizen ID already exists!")
+            return False
+        auth_dao.add_user(
+            form.email.data,
+            form.password.data,
+            form.citizen_id.data,
+            form.first_name.data,
+            form.last_name.data,
+            form.phone.data,
+            form.role.data,
+            form.avatar.data,
+        )
+        return True
+
+    def update_model(self, form, model):
+        updated_user = auth_dao.get_user_by_email(form.email.data)
+        if updated_user and updated_user.id != model.id:
+            form.email.errors.append("Email already exists!")
+            return False
+        updated_user = auth_dao.get_user_by_citizen_id(form.citizen_id.data)
+        if updated_user and updated_user.id != model.id:
+            form.citizen_id.errors.append("Citizen ID already exists!")
+            return False
+        # Update password
+        if form.password.data != model.password:
+            form.password.data = bcrypt.generate_password_hash(
+                form.password.data
+            ).decode("utf-8")
+        return super().update_model(form, model)
 
 
 class RouteAdmin(ModelView, AdminView):
@@ -120,21 +153,6 @@ class FlightAdmin(ModelView, AdminView):
 
     form_excluded_columns = ["flight_seats"]
 
-    def create_model(self, form):
-        # Check depart_time < arrive_time
-        if form.depart_time.data >= form.arrive_time.data:
-            form.depart_time.errors.append("Depart time must be before arrive time!")
-            form.arrive_time.errors.append("Depart time must be before arrive time!")
-            return False
-        # Check if aircraft is not available
-        if not form.aircraft.data.is_available(
-            form.depart_time.data, form.arrive_time.data
-        ):
-            form.aircraft.errors.append("Aircraft is not available at this time!")
-            return False
-        # Create seats for flight
-        return super().create_model(form)
-
     # def update_model(self, form, model):
     #     new_arrive_time = form.arrive_time.data
     #     new_aircraft = flight_dao.get_aircraft_by_id(form.aircraft.data.id)
@@ -144,7 +162,20 @@ class FlightAdmin(ModelView, AdminView):
 
     @expose("/new", methods=["GET"])
     def create_view(self):
-        return redirect(url_for("flights.show_routes"))
+        return redirect(url_for("flights.flight_scheduling"))
+
+
+class StopoverAdmin(ModelView, AdminView):
+    column_list = (
+        "airport_id",
+        "airport.name",
+        "flight_id",
+        "order",
+        "arrival_time",
+        "departure_time",
+    )
+    column_searchable_list = ["airport.name", "flight.id"]
+    column_sortable_list = ["airport.name", "flight_id", "arrival_time"]
 
 
 class AirportAdmin(ModelView, AdminView):
@@ -153,6 +184,13 @@ class AirportAdmin(ModelView, AdminView):
     column_searchable_list = ["code", "name", "country.name"]
     column_filters = ["country.name"]
     column_sortable_list = ["id", "name", "code", "country.name"]
+
+    @expose("/new/", methods=("GET", "POST"))
+    def create_view(self):
+        if flight_dao.get_airport_number() < flight_dao.get_max_airports():
+            return super().create_view()
+        flash("Cannot create more airports!", "danger")
+        return redirect(url_for("airport.index_view"))
 
     def create_model(self, form):
         if flight_dao.get_airport_by_code(form.code.data):
@@ -225,7 +263,7 @@ class AircraftSeatAdmin(ModelView, AdminView):
 
 class FlightSeatAdmin(ModelView, AdminView):
     column_list = ("flight.id", "aircraft_seat", "price", "currency")
-    column_searchable_list = ["flight.id"]
+    column_searchable_list = ["id", "flight.id"]
 
 
 class RegulationView(ModelView, AdminView):
@@ -260,6 +298,25 @@ class HomeView(AuthenticatedView):
         return redirect("/")
 
 
+class StatsView(AdminView):
+    @expose("/", methods=["GET"])
+    def index(self):
+        year = request.args.get("year")
+        month = request.args.get("month")
+        if year and month:
+            flight_stats = flight_dao.revenue_stats_route_by_time(year, month)
+            sum = dao.revenue_sum(flight_stats)
+            return self.render(
+                "admin/stats.html",
+                stats=flight_stats,
+                year=int(year),
+                month=int(month),
+                sum=sum,
+            )
+
+        return self.render("admin/stats.html", year=dt.now().year, month=dt.now().month)
+
+
 admin = Admin(
     app,
     template_mode="bootstrap4",
@@ -275,9 +332,11 @@ admin.add_view(AircraftSeatAdmin(AircraftSeat, db.session, name="AircraftSeats")
 admin.add_view(SeatClassAdmin(SeatClass, db.session, name="SeatClasses"))
 admin.add_view(RouteAdmin(Route, db.session, name="Routes"))
 admin.add_view(FlightAdmin(Flight, db.session, name="Flights"))
+admin.add_view(StopoverAdmin(Stopover, db.session, name="Stopovers"))
 admin.add_view(FlightSeatAdmin(FlightSeat, db.session, name="FlightSeats"))
 admin.add_view(ReservationView(Reservation, db.session, name="Reservations"))
 admin.add_view(PaymentView(Payment, db.session, name="Payments"))
 admin.add_view(RegulationView(Regulation, db.session, name="Regulations"))
+admin.add_view(StatsView(name="Statistic"))
 admin.add_view(HomeView(name="Home", menu_class_name="bg-success"))
 admin.add_view(LogoutView(name="Logout", menu_class_name="bg-danger"))

@@ -2,6 +2,7 @@
 {% from "bookings/components/reservation_card.html" import render_reservation_card with context %}
 
 {% extends "layouts/base.html" %}
+{% set active_page = 'booking' %}
 {% block content %}
 <div class="container mt-5 min-vh-100">
     <h2>Manage bookings</h2>

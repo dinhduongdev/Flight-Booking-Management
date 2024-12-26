@@ -1,6 +1,6 @@
 {% from "flights/components/price_part.html" import price_part with context %}
 {% from "bookings/components/seat_pick.html" import render_seat_pick %}
-{% from "layouts/field.html" import render_field %}
+{% from "layouts/field.html" import render_text_field %}
 
 {% macro render_reservation_form(flight, seat_class) %}
 <form method="POST" action="" class="row my-5">
@@ -28,7 +28,7 @@
             </div>
 
             <div class="card-body">
-                {{ render_field(form.citizen_id) }}
+                {{ render_text_field(form.citizen_id) }}
             </div>
             
             <!-- Nút xác nhận đặt vé -->

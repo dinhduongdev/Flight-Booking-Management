@@ -31,7 +31,6 @@ cloudinary.config(
 )
 
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
-oauth = OAuth(app)
 
 from app.blueprints import admin
 

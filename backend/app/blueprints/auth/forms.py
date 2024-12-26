@@ -51,6 +51,7 @@ class UpdateAccountForm(FlaskForm):
     first_name = StringField("First Name", validators=[DataRequired()])
     last_name = StringField("Last Name", validators=[DataRequired()])
     phone = TelField("Phone", validators=[DataRequired()])
+    citizen_id = StringField("Citizen ID", validators=[DataRequired()])
 
     picture = FileField(
         "Update Profile Picture",
@@ -71,6 +72,14 @@ class UpdateAccountForm(FlaskForm):
                     "That email is taken. Please choose a different one."
                 )
 
+    def validate_citizen_id(self, citizen_id):
+        if citizen_id.data != current_user.citizen_id:
+            user = dao.get_user_by_citizen_id(citizen_id.data)
+            if user:
+                raise ValidationError(
+                    "That citizen ID is taken. Please choose a different one."
+                )
+
 
 class RequestResetForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired(), Email()])
@@ -88,3 +97,12 @@ class ResetPasswordForm(FlaskForm):
         "Confirm Password", validators=[DataRequired(), EqualTo("password")]
     )
     submit = SubmitField("Reset Password")
+
+
+class ChangePasswordForm(FlaskForm):
+    old_password = PasswordField("Old Password", validators=[DataRequired()])
+    new_password = PasswordField("New Password", validators=[DataRequired()])
+    confirm_new_password = PasswordField(
+        "Confirm New Password", validators=[DataRequired(), EqualTo("new_password")]
+    )
+    submit = SubmitField("Change Password")

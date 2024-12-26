@@ -3,39 +3,16 @@ from flask_login import login_required, current_user
 from datetime import datetime as dt
 
 from . import bookings_bp
+from . import utils
+from .decorators import *
 from app.blueprints.flights import dao as flight_dao
 from app.blueprints.auth import dao as auth_dao
 from app.blueprints.auth.models import UserRole
 from . import dao as booking_dao
 from .forms import BookingForm
-from .models import Reservation, PaymentStatus, Payment
-import re
-from app.blueprints.auth import decorators
+from .models import Reservation, PaymentStatus
 from app.blueprints.bookings.vnpay import vnpay
-from app import app, db
-
-
-def validate_flight_seat_class(flight, seat_class):
-    """
-    1. Check if flight and seat class are valid
-    2. Check if this flight is bookable now
-    3. Check if flight has the seat class
-    4. Check if there are available seats for the seat class
-    """
-    if not flight or not seat_class:
-        flash("Invalid flight or seat class", "danger")
-        return False
-    if not flight.is_bookable_now():
-        flash("You are not allowed to book this flight", "danger")
-        return False
-    remaining_seatclasses_and_info = flight.get_remaining_seatclasses_and_info()
-    if seat_class.id not in remaining_seatclasses_and_info:
-        flash("Flight doesn't have this seat class", "danger")
-        return False
-    if remaining_seatclasses_and_info[seat_class.id]["remaining"] == 0:
-        flash("No available seats", "danger")
-        return False
-    return True
+from app import app
 
 
 @bookings_bp.route("/booking", methods=["GET", "POST"])
@@ -46,7 +23,7 @@ def reserve_ticket():
     seat_class = request.args.get("seat_class", type=flight_dao.get_seat_class_by_id)
 
     # Check params are valid
-    if not validate_flight_seat_class(flight, seat_class):
+    if not utils.validate_flight_seat_class(flight, seat_class):
         return redirect(url_for("main.home"))
 
     # if method is POST and form is valid
@@ -120,7 +97,12 @@ def confirmation():
 
         # Create reservation
         if payment_type == "cash":
-            booking_dao.add_reservation(owner.id, author.id, seat.id, is_paid=True)
+            reservation = booking_dao.add_reservation(
+                owner.id, author.id, seat.id, is_paid=True
+            )
+            # Send email
+            utils.send_flight_ticket_email(reservation, reservation.owner.email)
+
         elif payment_type == "card":
             booking_dao.add_reservation(owner.id, author.id, seat.id)
 
@@ -164,21 +146,9 @@ def manage_bookings_created_for_others():
     "/booking/edit-reservation/<int:reservation_id>", methods=["GET", "POST"]
 )
 @login_required
+@user_can_edit_this_reservation
 def edit_reservation(reservation_id):
-    """
-    Only the user and author of the reservation can edit it.
-    The user can't edit the reservation once paid.
-    """
-    reservation = booking_dao.get_reservation_by_id_and_user(
-        reservation_id, current_user.id
-    )
-    if not reservation:
-        flash("Reservation not found", "danger")
-        return redirect(url_for("bookings.manage_own_bookings"))
-
-    if not reservation.is_editable():
-        flash("You can't edit this reservation", "danger")
-        return redirect(url_for("bookings.manage_own_bookings"))
+    reservation = booking_dao.get_reservation_by_id(reservation_id)
 
     flight = reservation.flight_seat.flight
     seat_class = request.args.get(
@@ -186,7 +156,7 @@ def edit_reservation(reservation_id):
         type=flight_dao.get_seat_class_by_id,
         default=reservation.flight_seat.aircraft_seat.seat_class,
     )
-    if not validate_flight_seat_class(flight, seat_class):
+    if not utils.validate_flight_seat_class(flight, seat_class):
         return redirect(request.referrer)
 
     if request.method == "POST":
@@ -219,18 +189,15 @@ def edit_reservation(reservation_id):
 
 @bookings_bp.route("/manage-bookings/delete/<int:reservation_id>", methods=["POST"])
 @login_required
+@user_can_delete_this_reservation
 def delete_reservation(reservation_id):
     """
     Only the user who owns the reservation can delete it.
     Even author of the reservation can't delete it.
     """
-    if booking_dao.delete_reservation_of_owner(current_user.id, reservation_id):
-        flash("Reservation deleted", "success")
-    else:
-        flash("Reservation not found", "danger")
-
-    response = redirect(request.referrer)
-    return response
+    booking_dao.delete_reservation(reservation_id)
+    flash("Reservation deleted!", "success")
+    return redirect(request.referrer)
 
 
 def get_client_ip(request):
@@ -242,28 +209,19 @@ def get_client_ip(request):
     return ip
 
 
-@bookings_bp.route("/booking/payment/<id>", methods=["GET", "POST"])
-@decorators.login_required
-def payment(id):
+@bookings_bp.route("/booking/payment/<reservation_id>", methods=["GET", "POST"])
+@login_required
+@user_can_pay_this_reservation
+def payment(reservation_id):
     if request.method == "GET":
         # ...
-        reservation = booking_dao.get_reservation_by_id_and_user(id, current_user.id)
-        order_id = ""
-        message = ""
-
-        if reservation:
-            if reservation.is_paid():
-                message = "THIS TICKET HAS BEEN PAID"
-            else:
-                order_id = str(reservation.id)
-        else:
-            message = "TICKET NOT FOUND"
+        reservation = booking_dao.get_reservation_by_id(reservation_id)
+        order_id = reservation.id
 
         return render_template(
             "bookings/payment.html",
             order_id=order_id,
             reservation=reservation,
-            message=message,
         )
     else:
         order_id = request.form.get("order_id")
@@ -302,6 +260,7 @@ def payment(id):
 
 
 @bookings_bp.route("/booking/payment_return", methods=["GET"])
+@login_required
 def payment_return():
     inputData = request.args
     if inputData:
@@ -328,6 +287,10 @@ def payment_return():
                 )
 
                 reservation = booking_dao.get_reservation_by_id(reservation_id)
+                # send email
+                utils.send_flight_ticket_email(
+                    reservation, reservation.owner.email
+                )
                 flight_seat = reservation.flight_seat
                 flight = flight_seat.flight
 
@@ -386,3 +349,12 @@ def payment_return():
     return render_template(
         "bookings/payment_return.html", title="Payment result", result=""
     )
+
+
+@bookings_bp.route("/show-ticket/<int:reservation_id>", methods=["GET"])
+@login_required
+@user_can_view_ticket
+def show_ticket(reservation_id):
+    reservation = Reservation.query.get(reservation_id)
+    # Trả về giao diện hiển thị vé
+    return render_template("bookings/ticket.html", reservation=reservation)

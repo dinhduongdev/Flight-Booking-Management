@@ -7,8 +7,16 @@
             <div class="d-flex align-items-center">
                 <span><b>Seat:</b> <span class="seat_name">{{reservation.flight_seat.aircraft_seat.seat_name}}</span></span>
             </div>
+            <!--  -->
+            <!-- If the reservation is paid then display the payment price -->
+            <!-- Else display the flight seat price -->
+            <!--  -->
             <div class="d-flex align-items-center">
-                <span><b>Price:</b> {{ "{:,}".format(reservation.flight_seat.price) }} {{reservation.flight_seat.currency}}</span>
+                {% if reservation.is_paid() %}
+                    <span><b>Price:</b> {{"{:,}".format(reservation.payment.amount)}} VND</span>
+                {% else %}
+                    <span><b>Price:</b> {{ "{:,}".format(reservation.flight_seat.price) }} VND</span>
+                {% endif %}
             </div>
         </div>
         <div class="d-flex align-items-center">

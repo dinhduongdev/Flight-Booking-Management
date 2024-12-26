@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        main{
+            max-width: 1000px;
+            margin: 0 auto;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        header{
+            display: flex !important;
+            justify-content: space-between !important;
+            padding: 10px;
+            align-items: center !important;
+            border-bottom: 1px solid lightgray;
+        }
+        .col-6{
+            width: 50%;
+            padding: 10px;
+        }
+        .col-12{
+            width: 100%;
+            padding: 10px;
+        }
+        .border-start{
+            border-left: 1px solid lightgray;
+        }
+        .d-flex{
+            display: flex;
+        }
+        .row{
+            display: flex;
+        }
+        .f-column{
+            display: flex;
+            flex-direction: column;
+        }
+        .mx-auto{
+            margin: 0 auto;
+        }
+        .w-fit{
+            width: fit-content;
+        }
+        .a-center{
+            align-items: center;
+        }
+        .j-center{
+            justify-content: center;
+        }
+        .j-between{
+            justify-content: space-between;
+        }
+        .f-row{
+            flex-direction: row;
+        }
+        .dot-line{
+            border-bottom: 1px dotted #000;
+            width: 100%;
+            margin-top: 4px;
+        }
+        .bb{
+            border-bottom: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    {% set flight = reservation.flight_seat.flight %}
+    {% set route = flight.route %}
+    {% set aircraft_seat = reservation.flight_seat.aircraft_seat %}
+    <main>
+        <header style="display: flex; justify-content: space-between !important;">
+            <h1>Flight ticket</h1>
+            <a href="{{url_for('main.home',_external=True)}}" style="height: 60px; display: block;">
+                <img  src="https://res.cloudinary.com/dzbbvlwxi/image/upload/v1735044283/flight-booking/slxy7j6xrcjeqgddk4wq.png" alt="Image" title="Image" style="height: 100%;">    
+            </a>
+        </header>
+        <div class="card-body py-0 border-bottom">
+            <div class="row bb">
+                <div class="col-6">
+                    <div class="f-column mx-auto w-fit" style="display: flex; flex-direction: column; margin: 0 auto;">
+                        <div><b>Flight duration:</b> {{flight.arrive_time- flight.depart_time}}</div>
+                        <div><b>Flight ID:</b> {{flight.id}}</div>
+                        <div><b>Airline:</b> {{flight.aircraft.airline.name}}</div>
+                        <div><b>Aircraft:</b> {{flight.aircraft.name}} - {{flight.aircraft.id}}</div>
+                    </div>
+                </div>
+                <div class="col-6 border-start">
+                    <div class="d-flex flex-column a-center j-center" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div class="d-flex f-column a-center" style="display: flex; flex-direction: column; align-items: center;">
+                            <p class="mb-2">{{flight.depart_time.strftime("%H:%M")}}</p>
+                            <p class="mb-2" title="{{route.depart_airport}}">
+                            {{route.depart_airport.code}}
+                            </p>
+                            <small class="mb-0">{{flight.depart_time.strftime("%d/%m/%Y")}}</small>
+                        </div>
+                        <div class="dot-line"></div>
+                        <div class="d-flex f-column a-center" style="display: flex; flex-direction: column;">
+                            <p class="mb-2">{{flight.arrive_time.strftime('%H:%M')}}</p>
+                            <p class="mb-2" title="{{route.arrive_airport}}">
+                            {{route.arrive_airport.code}}
+                            </p>
+                            <small class="mb-0">{{flight.arrive_time.strftime("%d/%m/%Y")}}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bb">
+                <div class="col-6"><b>Departure: </b>{{route.depart_airport}}</div>
+                <div class="col-6 border-start"><b>Arrival: </b>{{route.arrive_airport}}</div>
+            </div>
+            <div class="row bb">
+                <div class="col-6"><b>Reservation ID: </b>{{reservation.id}}</div>
+                <div class="col-6 border-start"><b>Passenger: </b>{{reservation.owner.full_name}}</div>
+            </div>
+            <div class="row bb">
+                <div class="col-6"><b>Citizen ID: </b>{{reservation.owner.citizen_id}}</div>
+                <div class="col-6 border-start"><b>Phone number: </b>{{reservation.owner.phone}}</div>
+            </div>
+            <div class="row bb">
+                <div class="col-6"><b>Seat: </b>{{aircraft_seat.seat_name}}</div>
+                <div class="col-6 border-start"><b>Seat class: </b>{{aircraft_seat.seat_class.name}}</div>
+            </div>
+            <div class="row bb">
+                <div class="col-6"><b>Price: </b>{{"{:,}".format(reservation.payment.amount)}} {{reservation.flight_seat.currency}}</div>
+                <div class="col-6 border-start"><b>Author: </b>{{reservation.author.full_name}} - {{reservation.author.role}}</div>
+            </div>
+            <div class="row"><div class="col-12"><b>Created at: </b>{{reservation.created_at.strftime('%Y-%m-%d %H:%M:%S')}}</div></div>
+        </div>
+    </main>
+</body>
+</html>

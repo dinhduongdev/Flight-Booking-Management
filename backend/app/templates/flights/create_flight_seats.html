@@ -1,0 +1,65 @@
+{% extends 'layouts/base.html' %}
+{% set active_page = 'schedule' %}
+
+{% block content %}
+<div class="container my-5 min-vh-100">
+    <form action="" method="post" class="card mx-auto">
+        <div class="card-header">
+            <h3>Create flight seats</h3>
+            <h5>Aircraft: {{flight.aircraft}}</h5>
+        </div>
+        {% for seat_class, seats in flight.aircraft.seats|groupby('seat_class_id') %}
+        <div class="card-body border-top">
+            <div class="card-title h3">
+                <div class="d-flex align-items-center">
+                    {{seats[0].seat_class.name}}
+                    <div class="ms-2 form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="toggle_class_{{seat_class}}" checked>
+                    </div>
+                </div>
+            </div>
+            <div class="seats_container" seat_class="{{seat_class}}">
+                <div class="row">
+                    {% for seat in seats %}
+                        <div class="d-flex flex-column align-items-center col-lg-1 col-md-2 col-sm-3 col-4">
+                            <input class="form-check-input" type="checkbox" id="{{seat.id}}" name="seat_ids" value="{{seat.id}}" seat_class="{{seat_class}}" checked style="zoom: 2;">
+                            <label class="form-check-label" for="{{seat.id}}">{{seat.seat_name}}</label>
+                        </div>
+                    {% endfor %}
+                    <div class="col-12 mt-3">
+                        <div class="input-group">
+                            <input type="number" name="price_class_{{seat_class}}" id="seat_class_{{seat_class}}_price" placeholder="" required>
+                            <label for="price_class_{{seat_class}}">Price</label>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+<!--  -->
+<!--  -->
+<!--  -->
+{% block scripts %}
+<script>
+    document.querySelectorAll('.form-switch input').forEach((class_toggle) => {
+        class_toggle.addEventListener('change', (e) => {
+            const seat_class = e.target.id.split('_')[2];
+            document.querySelectorAll(`input[seat_class='${seat_class}']`).forEach((seat) => {
+                seat.checked = e.target.checked;
+            });
+            let price_input = document.querySelector(`#seat_class_${seat_class}_price`);
+            price_input.disabled = !e.target.checked;
+            price_input.required = e.target.checked;
+            
+            // Hide the seats container
+            document.querySelector(`.seats_container[seat_class='${seat_class}']`).classList.toggle('d-none');
+        });
+    });
+</script>
+{% endblock %}

@@ -1,9 +1,12 @@
 {% extends "user/account.html" %}
 <!--  -->
 {% block avatar_col %}
-<a href="{{url_for('auth.update_account')}}" class="btn btn-primary"
+<div class="d-flex flex-column">
+  <a href="{{url_for('auth.update_account')}}" class="btn btn-primary"
   >Update account</a
 >
+<a href="{{url_for('auth.change_password')}}" class="btn btn-primary-invert mt-3">Change password</a>
+</div>
 {% endblock avatar_col %}
 <!--  -->
 {% block main_col %}

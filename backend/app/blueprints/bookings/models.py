@@ -38,6 +38,17 @@ class Reservation(db.Model):
     def __repr__(self):
         return f"Reservation('{self.id}', '{self.flight_seat_id}', '{self.owner_id}')"
 
+    def is_payable(self):
+        """
+        Reservation is payable if it is unpaid, the flight is bookable and the seat is not sold
+        """
+        if self.is_deleted or self.is_paid():
+            return False
+
+        return (
+            self.flight_seat.flight.is_bookable_now() and not self.flight_seat.is_sold()
+        )
+
     def is_paid(self):
         return self.payment and self.payment.status == PaymentStatus.SUCCESS
 

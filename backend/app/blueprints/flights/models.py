@@ -87,6 +87,9 @@ class Aircraft(db.Model):
     def __repr__(self):
         return f"Aircraft({self.id}, '{self.airline.name}', '{self.name}')"
 
+    def to_dict(self):
+        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+
     def is_available(self, depart_time, arrive_time):
         for flight in self.flights:
             if flight.depart_time < arrive_time and flight.arrive_time > depart_time:
@@ -137,7 +140,7 @@ class FlightSeat(db.Model):
 
     def is_sold(self):
         return next((r for r in self.reservations if r.is_paid()), None) is not None
-
+    
 
 class Route(db.Model):
     __tablename__ = "routes"
@@ -149,15 +152,13 @@ class Route(db.Model):
     arrive_airport_id = Column(Integer, ForeignKey("airports.id"), nullable=False)
     depart_airport = relationship(
         "Airport",
-        foreign_keys=[depart_airport_id],
+        foreign_keys="Route.depart_airport_id",
         backref="depart_routes",
-        passive_deletes=True,
     )
     arrive_airport = relationship(
         "Airport",
-        foreign_keys=[arrive_airport_id],
+        foreign_keys="Route.arrive_airport_id",
         backref="arrive_routes",
-        passive_deletes=True,
     )
 
     def __repr__(self):
@@ -174,6 +175,7 @@ class Flight(db.Model):
     )
     id = Column(Integer, primary_key=True, autoincrement=True)
     route_id = Column(Integer, ForeignKey("routes.id"), nullable=True)
+    code = Column(String(20), nullable=False)
     depart_time = Column(DateTime, nullable=False)
     arrive_time = Column(DateTime, nullable=False)
     aircraft_id = Column(Integer, ForeignKey("aircrafts.id"), nullable=True)
@@ -226,6 +228,14 @@ class Flight(db.Model):
 
     def get_seat_by_id(self, seat_id):
         return next((fs for fs in self.seats if fs.id == seat_id), None)
+    
+    def calculate_revenue(self):
+        revenue = 0
+        for seat in self.seats:
+            if seat.is_sold():  
+                revenue += seat.price
+        return revenue
+
 
 
 class Stopover(db.Model):

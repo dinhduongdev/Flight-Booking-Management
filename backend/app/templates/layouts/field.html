@@ -1,4 +1,4 @@
-{% macro render_field(field, class='') %}
+{% macro render_text_field(field, class='') %}
 <div class="input-group {{class}}">
     <!------------------------ Check errors -------------------------->
     {% if field.errors %}
@@ -14,5 +14,21 @@
     {% endif %}
     <!------------------------ End check errors -------------------------->
         {{ field.label(class='form-control-label') }}
+</div>
+{% endmacro %}
+
+{% macro render_select_field(field, class='', label_icon=none) %}
+<div class="position-relative {{class}}">
+    {{field}}
+    {{field.label(class='position-absolute top-0 translate-middle-y', style='background-color: white; z-index: 10;left:20px;font-size:12px;font-weight:bold;color:#999;padding:0 10px;')}}
+    <!------------------------ Check errors -------------------------->
+    {% if field.errors %}
+    <!---->
+        <div class="invalid-feedback d-block">
+        {% for error in field.errors %}
+            <span>{{error}}</span>
+        {% endfor %}
+        </div>
+    {% endif %}
 </div>
 {% endmacro %}

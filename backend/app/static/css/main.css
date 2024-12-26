@@ -342,7 +342,7 @@ footer hr {
 }
 .input-group {
   position: relative;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 .input-group input:focus {
   border-color: dodgerblue;
@@ -372,6 +372,30 @@ footer hr {
 .input-group input:not(:focus):not(:placeholder-shown) ~ label {
   top: -5px !important;
 }
+
+.selectpicker ~  .dropdown-toggle{
+  border: 1px solid gray !important;
+  height: 46px;
+  background-color: white;
+}
+
+.dropdown.bootstrap-select{
+  width: 100% !important;
+}
+
+.filter-option{
+  align-content: center;
+}
+
+
+.form-control{
+  height: 46px;
+  border: 1px solid gray;
+}
+/*  */
+/*  */
+/*  */
+/*  */
 
 .hr-or {
   display: flex;

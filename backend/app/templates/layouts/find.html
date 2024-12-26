@@ -1,3 +1,5 @@
+{% from 'layouts/field.html' import render_select_field, render_text_field %}
+
 <div class="find">
   <div class="form-container">
     <form method="GET" action="{{ url_for('flights.searchFlights') }}">
@@ -43,62 +45,32 @@
 
       <!-- Flight Details -->
       <div class="row g-3 align-items-end justify-content-center">
-        <div class="col-md-2">
-          <label for="from" class="form-label">From:</label>
-          <select
-            id="from"
-            name="from"
-            class="form-select w-100"
-            data-live-search="true"
-            required
-          >
-            <option value="" disabled selected>Select departure airport</option>
-            <!-- ============== FETCH ============== -->
-          </select>
+        <div class="col-lg-3 col-sm-6">
+          {{render_select_field(form.departure_airport)}}
         </div>
-        <div class="col-md-2">
-          <label for="to" class="form-label">To:</label>
-          <select
-            id="to"
-            name="to"
-            class="form-select w-100"
-            data-live-search="true"
-            required
-          >
-            <option value="" disabled selected>Select arrival airport</option>
-          </select>
+        <div class="col-lg-3 col-sm-6">
+          {{render_select_field(form.arrival_airport)}}
         </div>
-        <div class="col-md-2">
-          <label for="depart" class="form-label">Depart:</label>
-          <input
-            type="date"
-            id="depart"
-            name="depart"
-            class="form-control"
-            value="{{ request.args.get('depart') }}"
-            required
-          />
+        <div class="col-lg-2 col-sm-6">
+          {{render_text_field(form.departure_date)}}
         </div>
-        <div class="col-md-2">
-          <label for="return" class="form-label">Return:</label>
-          <input
-            type="date"
-            id="return"
-            name="return"
-            class="form-control"
-            disabled
-          />
+        <div class="col-lg-2 col-sm-6">
+          <div class="input-group">
+            <input
+              type="date"
+              id="return"
+              name="return"
+              class="form-control"
+              disabled
+            />
+            <label for="return" class="form-label">Return:</label>
+          </div>
         </div>
-        <div class="col-md-2">
-          <button
-            type="submit"
-            class="btn btn-primary d-flex align-items-center"
-          >
-            Search Flights
-            <i class="fa-solid fa-arrow-right" style="margin-left: 8px"></i>
-          </button>
+        <div class="col-lg-2 col-12 h-100">
+          {{form.submit(class="btn btn-primary d-flex align-items-center p-2 w-100",style='height:46px')}}
         </div>
       </div>
     </form>
   </div>
 </div>
+<script src="{{ url_for('static', filename='js/searchBox.js') }}"></script>

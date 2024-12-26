@@ -1,35 +1,35 @@
-{% from "layouts/field.html" import render_field with context%}
+{% from "layouts/field.html" import render_text_field with context%}
 
 {% extends "layouts/base.html" %} {% block content %}
 <div class="container d-flex justify-content-between align-items-center vh-100">
   <div class="card" style="width: 40rem">
+    <div class="card-header h2">Sign up</div>
     <div class="card-body">
-      <h2 class="card-title text-start mb-4">Sign Up</h2>
       <form action="" method="post">
         {{ form.hidden_tag() }}
         <!-- ======================== Email ======================== -->
-        {{ render_field(form.email) }}
+        {{ render_text_field(form.email,class='mb-3') }}
 
         <!-- ======================== Name ======================== -->
         <div class="row">
           <div class="col-6">
             <!-- ======================== First Name ======================== -->
-            {{ render_field(form.first_name) }}
+            {{ render_text_field(form.first_name,class='mb-3') }}
           </div>
           <div class="col-6">
             <!-- ======================== Last Name ======================== -->
-            {{ render_field(form.last_name) }}
+            {{ render_text_field(form.last_name,class='mb-3') }}
           </div>
         </div>
         <!-- ======================== Citizen ID ======================== -->
-        {{ render_field(form.citizen_id) }}
+        {{ render_text_field(form.citizen_id,class='mb-3') }}
         <!-- ======================== Phone ======================== -->
-        {{ render_field(form.phone) }}
+        {{ render_text_field(form.phone,class='mb-3') }}
 
         <!-- ======================== Password ======================== -->
-        {{ render_field(form.password) }}
+        {{ render_text_field(form.password,class='mb-3') }}
         <!-- ======================== Confirm Password ======================== -->
-        {{ render_field(form.confirm_password) }}
+        {{ render_text_field(form.confirm_password,class='mb-3') }}
         {{ form.submit(class='btn col-12 btn-lg btn-primary') }}
       </form>
       <div class="hr-or my-3">

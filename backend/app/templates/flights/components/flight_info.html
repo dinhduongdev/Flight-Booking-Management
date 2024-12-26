@@ -8,8 +8,8 @@
     <div >
         <div><b>Flight ID</b>: {{flight.id}}</div>
         <div><b>Airline</b>: {{flight.aircraft.airline.name}}</div>
-        <div><b>Aircraft</b>: {{flight.aircraft.name}}</div>
-        <a href="{{url_for('flights.showFlight', id=flight.id)}}">Flight details</a>
+        <div><b>Aircraft</b>: {{flight.aircraft.name}} - {{flight.aircraft.id}}</div>
+        <a href="{{url_for('flights.showFlight', id=flight.id, _external=True)}}">Flight details</a>
     </div>
     </div>
 </div>

@@ -128,40 +128,10 @@ function validateRadio() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  // validateRadio()
-  // const fromSelect = document.getElementById("from");
-  // const toSelect = document.getElementById("to");
-  // fromSelect.addEventListener("change", handleFromSelectChange);
-  // function handleFromSelectChange() {
-  //     clearToSelectOptions();
-  //     const selectedFrom = parseInt(fromSelect.value);
-  //     fetchRoutes(selectedFrom);
-  // }
-  // function clearToSelectOptions() {
-  //   toSelect.innerHTML = "";
-  //   toSelect.innerHTML = `<option value="" disabled selected>Select destination airport</option>`
-  // }
-  // function fetchRoutes(selectedFrom) {
-  //     fetch("/api/routes")
-  //         .then(response => response.json())
-  //         .then(routes => {
-  //             const filteredAirports = filterRoutesByDepartAirport(routes, selectedFrom);
-  //             populateToSelectOptions(filteredAirports);
-  //         });
-  // }
-  // function filterRoutesByDepartAirport(routes, selectedFrom) {
-  //   return routes.filter(route => route.depart_airport_id == selectedFrom);
-  // }
-  // function populateToSelectOptions(filteredAirports) {
-  //   filteredAirports.forEach(airport => {
-  //       const option = document.createElement("option");
-  //       option.value = airport.arrive_airport_id;
-  //       option.textContent = airport.arrive_airport;
-  //       toSelect.appendChild(option);
-  //   });
-  // }
   let noti_panel = document.querySelector('.noti-panel > .toast-container')
   setTimeout(() => {
     noti_panel.style = 'right: 0;'
   }, 10)
+
+  
 });

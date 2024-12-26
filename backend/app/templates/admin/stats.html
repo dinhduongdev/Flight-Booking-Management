@@ -1,0 +1,150 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+
+{% if current_user.is_authenticated %}
+<form method="GET">
+    <label for="year">Year:</label>
+    <select name="year">
+        <option value="2024" {% if 2024 == year %}selected{% endif %}>2024</option>
+        <option value="2023" {% if 2023 == year %}selected{% endif %}>2023</option>
+        <option value="2022" {% if 2022 == year %}selected{% endif %}>2022</option>
+    </select>
+    
+    <label for="month">Month:</label>
+    <select name="month">
+        <option value="1" {% if 1 == month %}selected{% endif %}>January</option>
+        <option value="2" {% if 2 == month %}selected{% endif %}>February</option>
+        <option value="3" {% if 3 == month %}selected{% endif %}>March</option>
+        <option value="4" {% if 4 == month %}selected{% endif %}>April</option>
+        <option value="5" {% if 5 == month %}selected{% endif %}>May</option>
+        <option value="6" {% if 6 == month %}selected{% endif %}>June</option>
+        <option value="7" {% if 7 == month %}selected{% endif %}>July</option>
+        <option value="8" {% if 8 == month %}selected{% endif %}>August</option>
+        <option value="9" {% if 9 == month %}selected{% endif %}>September</option>
+        <option value="10" {% if 10 == month %}selected{% endif %}>October</option>
+        <option value="11" {% if 11 == month %}selected{% endif %}>November</option>
+        <option value="12" {% if 12 == month %}selected{% endif %}>December</option>
+    </select>
+    
+    <button class="btn btn-primary"  type="submit">Filter</button>
+</form>
+
+{% if stats %}
+<!-- Các biểu đồ nằm trong một hàng -->
+<div class="d-flex justify-content-between">
+    <!-- Biểu đồ Cột - Số lượt bay -->
+    <div style="width: 48%;">
+        <canvas id="flightCountChart" width="400" height="400"></canvas>
+    </div>
+    
+    <!-- Biểu đồ Cột - Doanh thu -->
+    <div style="width: 48%;">
+        <canvas id="revenueChart" width="400" height="400"></canvas>
+    </div>
+</div>
+
+<!-- Hiển thị bảng thống kê -->
+<table class="table border-2 border-solid border-gray-800">
+    <tr class="border-b-2 border-gray-800 bg-gray-200" style="background-color: gray; color: white;">
+        <th class="px-4 py-2">No.</th>
+        <th class="px-4 py-2">Route</th>
+        <th class="px-4 py-2">Revenue</th>
+        <th class="px-4 py-2">Flight count</th>
+        <th class="px-4 py-2">Ratio</th>
+    </tr>
+    
+    {% for s in stats %}
+        <tr class="border-b-2 border-gray-800">
+            <td class="px-4 py-2">{{ loop.index }}</td>
+            <td class="px-4 py-2">{{ s[0] }}</td>
+            <td class="px-4 py-2">${{ s[-1] }}</td>
+            <td class="px-4 py-2">{{ s[1] }}</td>
+            <td class="px-4 py-2">{{ ((s[-1] / sum) * 100) | round(2) }} %</td>
+        </tr>
+    {% endfor %}
+    <tr class="border-b-2 border-gray-800">
+        <td colspan="2" class="px-4 py-2 font-bold"> Total Revenue</td>
+        <td class="px-4 py-2 font-bold">${{ sum }}</td>
+    </tr>
+</table>
+{% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Dữ liệu từ template
+    const labels = [{% for s in stats %}"{{ s[0] }}"{% if not loop.last %}, {% endif %}{% endfor %}];
+    const flightCounts = [{% for s in stats %}{{ s[1] }}{% if not loop.last %}, {% endif %}{% endfor %}];
+    const revenues = [{% for s in stats %}{{ s[-1] }}{% if not loop.last %}, {% endif %}{% endfor %}];
+
+    // Biểu đồ Cột - Số lượt bay
+    const ctx1 = document.getElementById('flightCountChart').getContext('2d');
+    const flightCountChart = new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Số lượt bay',
+                data: flightCounts,
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',  // Màu sắc cho các phần của biểu đồ
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'top' }
+            }
+        }
+    });
+
+    // Biểu đồ Cột - Doanh thu
+    const ctx2 = document.getElementById('revenueChart').getContext('2d');
+    const revenueChart = new Chart(ctx2, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Doanh thu',
+                data: revenues,
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)',  // Màu sắc cho các phần của biểu đồ
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { position: 'top' }
+            }
+        }
+    });
+</script>
+
+{% endif %}
+{% endblock %}

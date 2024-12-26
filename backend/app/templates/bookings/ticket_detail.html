@@ -1,0 +1,58 @@
+{% from 'flights/components/flight_route.html' import render_flight_route %}
+{% from 'flights/components/flight_info.html' import render_flight_info %}
+
+
+{% set flight = reservation.flight_seat.flight %}
+{% set route = flight.route %}
+{% set aircraft_seat = reservation.flight_seat.aircraft_seat %}
+<div class="container-fluid">
+    <div class="card mx-auto mt-3">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <div class="card-title ml-5 h1 m-0">Flight ticket</div>
+                <img  src="https://res.cloudinary.com/dzbbvlwxi/image/upload/v1735044283/flight-booking/slxy7j6xrcjeqgddk4wq.png" alt="Image" title="Image" style="outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;clear: both;display: inline-block !important;border: none;height: auto;float: none;width: 29%;max-width: 168.2px;" width="168.2">    
+            </div>
+        </div>
+        <div class="card-body py-0 border-bottom">
+            <div class="row">
+                {{ render_flight_info(flight, class='col-12 col-sm-6') }}    
+                {% if not email %}
+                    {{ render_flight_route(flight, class='col-12 col-sm-6') }}
+                {% endif %}
+            </div>
+        </div>
+        <div class="card-body py-0 border-bottom">
+            <div class="row">
+                <div class="col-6"><b>Departure: </b>{{route.depart_airport}}</div>
+                <div class="col-6 border-start"><b>Arrival: </b>{{route.arrive_airport}}</div>
+            </div>
+        </div>
+        <div class="card-body py-0 border-bottom">
+            <div class="row">
+                <div class="col-6"><b>Reservation ID: </b>{{reservation.id}}</div>
+                <div class="col-6 border-start"><b>Passenger: </b>{{reservation.owner.full_name}}</div>
+            </div>
+        </div>
+        <div class="card-body py-0 border-bottom">
+            <div class="row">
+                <div class="col-6"><b>Citizen ID: </b>{{reservation.owner.citizen_id}}</div>
+                <div class="col-6 border-start"><b>Phone number: </b>{{reservation.owner.phone}}</div>
+            </div>
+        </div>
+        <div class="card-body py-0 border-bottom">
+            <div class="row">
+                <div class="col-6"><b>Seat: </b>{{aircraft_seat.seat_name}}</div>
+                <div class="col-6 border-start"><b>Seat class: </b>{{aircraft_seat.seat_class.name}}</div>
+            </div>
+        </div>
+        <div class="card-body py-0 border-bottom">
+            <div class="row">
+                <div class="col-6"><b>Price: </b>{{"{:,}".format(reservation.payment.amount)}} {{reservation.flight_seat.currency}}</div>
+                <div class="col-6 border-start"><b>Author: </b>{{reservation.author.full_name}} - {{reservation.author.role}}</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <b>Created at: </b> {{reservation.created_at.strftime('%Y-%m-%d %H:%M:%S')}}
+        </div>
+    </div>
+</div>

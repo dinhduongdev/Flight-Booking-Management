@@ -38,8 +38,17 @@
 .table td,
 .table th {
   padding: 0.2rem;
+  color: black !important;
 }
 
 table input[type="checkbox"] {
   zoom: 1.8;
+}
+
+.control-label{
+  color: #000 !important;
+}
+
+.column-header > a[href] {
+  color: dodgerblue !important;
 }

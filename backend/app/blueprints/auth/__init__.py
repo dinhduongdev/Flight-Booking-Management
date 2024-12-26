@@ -1,6 +1,8 @@
 from flask import Blueprint
+from google_auth_oauthlib.flow import Flow
 
-from app import oauth
+from app.config import GoogleAuthConfig
+
 from app import GoogleAuthConfig
 from google_auth_oauthlib.flow import Flow
 

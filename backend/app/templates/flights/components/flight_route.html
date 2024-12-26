@@ -13,11 +13,9 @@
             <!--  -->
             <!--  -->
             {% if not flight.stopovers %}
-            <small>nonstop</small>
+                <small>nonstop</small>
             {% elif flight.stopovers |length == 1 %}
-            <small title="{{flight.stopovers[0].airport}}"
-            >{{flight.stopovers[0].airport.code}}</small
-            >
+                <small title="{{flight.stopovers[0].airport}}">{{flight.stopovers[0].airport.code}}</small>
             {% else %}
             <small>{{flight.stopovers |length}} stops</small>
             {% endif %}

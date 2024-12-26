@@ -1,4 +1,4 @@
-{% from 'layouts/field.html' import render_field %}
+{% from 'layouts/field.html' import render_text_field %}
 
 {% extends 'layouts/base.html' %}
 {% block content %}
@@ -10,7 +10,7 @@
             <p class="card-text py-2">
                 Enter your email address and we'll send you an email with instructions to reset your password.
             </p>
-            {{ render_field(form.email) }}
+            {{ render_text_field(form.email, class='mb-3') }}
             {{ form.submit(class='btn-primary btn col-12') }}
             <div class="d-flex justify-content-between mt-4">
                 <a class="btn btn-primary-invert" href="{{url_for('auth.login')}}">Login</a>

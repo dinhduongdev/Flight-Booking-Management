@@ -1,16 +1,11 @@
-from sqlalchemy import or_
-
 from .models import *
 from app.blueprints.flights import dao as flight_dao
 from app import app
+from app import app, db
 
 
 def get_reservation_by_id(reservation_id):
     return Reservation.query.get(reservation_id)
-
-
-def get_user_reservation_by_flight_seat(user, flight_seat):
-    return next((r for r in user.reservations if r.flight_seat == flight_seat), None)
 
 
 def get_reservations_of_owned_user(owner_id, page=1, per_page=app.config["PAGE_SIZE"]):
@@ -49,20 +44,25 @@ def add_reservation(owner_id, author_id, flight_seat_id, is_paid=False):
     return reservation
 
 
-def delete_reservation_of_owner(owner_id, reservation_id):
-    reservation = Reservation.query.filter(
-        (Reservation.id == reservation_id)
-        & (Reservation.owner_id == owner_id)
-        & (Reservation.is_deleted == False)
-    ).first()
-    if not reservation or reservation.is_paid():
+def delete_reservation(reservation_id):
+    reservation = Reservation.query.get(reservation_id)
+    if not reservation:
         return False
     reservation.is_deleted = True
     db.session.commit()
     return True
 
 
+def get_reservation_of_owner(owner_id, reservation_id):
+    return Reservation.query.filter_by(
+        owner_id=owner_id, id=reservation_id, is_deleted=False
+    ).first()
+
+
 def get_reservation_by_id_and_user(id, user_id):
+    """
+    Get a reservation that the user owned or created for others
+    """
     return Reservation.query.filter(
         (Reservation.id == id)
         & ((Reservation.owner_id == user_id) | (Reservation.author_id == user_id))
@@ -75,12 +75,9 @@ def update_reservation_seat(reservation, flight_seat_id):
     db.session.commit()
     return reservation
 
+
 def add_payment(reservation_id, amount, status=PaymentStatus.PENDING):
-    new_payment = Payment(
-        reservation_id=reservation_id,
-        amount=amount,
-        status=status
-    )
+    new_payment = Payment(reservation_id=reservation_id, amount=amount, status=status)
 
     db.session.add(new_payment)
 

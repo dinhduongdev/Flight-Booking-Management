@@ -62,6 +62,7 @@
       {% endblock content %}
     </main>
     {% include 'layouts/footer.html' %} {% block scripts %} {% endblock %}
+    {% block extra_css %} {% endblock %}
   </body>
 
   <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
