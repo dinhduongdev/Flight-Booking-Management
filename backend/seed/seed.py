@@ -30,9 +30,7 @@ def seed_users():
         users = json.load(f)
     for user in users:
         user["role"] = UserRole(user["role"])
-        user["password"] = auth_dao.bcrypt.generate_password_hash(
-            user["password"]
-        ).decode("utf-8")
+        user["password"] = auth_utils.generate_hashed_password(user["password"])
         user["avatar"] = user.get("avatar", None)
         if not user["avatar"]:
             user["avatar"] = auth_utils.randomize_profile_img()

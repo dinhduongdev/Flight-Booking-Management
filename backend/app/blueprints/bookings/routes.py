@@ -45,7 +45,6 @@ def reserve_ticket():
         # Store reservation details in session
         session["pending_reservation"] = {
             "owner_id": owner.id,
-            "author_id": current_user.id,
             "flight_seat_id": flight_seat_id,
         }
 
@@ -76,7 +75,7 @@ def confirmation():
         return redirect(url_for("bookings.manage_own_bookings"))
 
     owner = auth_dao.get_user_by_id(reservation_details["owner_id"])
-    author = auth_dao.get_user_by_id(reservation_details["author_id"])
+    author = current_user
     seat = flight_dao.get_flight_seat_by_id(reservation_details["flight_seat_id"])
     flight = seat.flight
 
@@ -288,9 +287,7 @@ def payment_return():
 
                 reservation = booking_dao.get_reservation_by_id(reservation_id)
                 # send email
-                utils.send_flight_ticket_email(
-                    reservation, reservation.owner.email
-                )
+                utils.send_flight_ticket_email(reservation, reservation.owner.email)
                 flight_seat = reservation.flight_seat
                 flight = flight_seat.flight
 
