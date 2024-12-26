@@ -83,7 +83,7 @@ def confirmation():
     if not flight.is_bookable_now() or seat.is_sold():
         session.pop("reservation_details", None)
         flash("Flight is no longer bookable", "danger")
-        return redirect(request.referrer)
+        return redirect(url_for("flights.showFlight", id=flight.id))
 
     # Clear the reservation details from session
     if request.method == "POST":
@@ -156,7 +156,7 @@ def edit_reservation(reservation_id):
         default=reservation.flight_seat.aircraft_seat.seat_class,
     )
     if not utils.validate_flight_seat_class(flight, seat_class):
-        return redirect(request.referrer)
+        return redirect(url_for("main.home"))
 
     if request.method == "POST":
         flight_seat_id = request.form.get("flight_seat_id", type=int)
