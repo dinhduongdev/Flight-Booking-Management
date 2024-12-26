@@ -7,6 +7,7 @@ from datetime import datetime as dt
 import json
 from app import app, db
 from app.blueprints.auth import dao as auth_dao
+from app.blueprints.auth import utils as auth_utils
 from app.blueprints.auth.models import User
 from app.blueprints.auth.models import UserRole
 from app.blueprints.flights.models import Route
@@ -34,7 +35,7 @@ def seed_users():
         ).decode("utf-8")
         user["avatar"] = user.get("avatar", None)
         if not user["avatar"]:
-            user["avatar"] = auth_dao.randomize_profile_img()
+            user["avatar"] = auth_utils.randomize_profile_img()
         db.session.add(User(**user))
 
     print("Users seeded successfully!")
