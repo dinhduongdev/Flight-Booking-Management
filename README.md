@@ -127,7 +127,7 @@ Main actors:
 
 <img src='readme_imgs/class.png'>
 
-### ... The remaining is in [hear](./Quản%20lý%20chuyến%20bay%20nhóm%209.docx)
+### ... The remaining is in [here](./Quản%20lý%20chuyến%20bay%20nhóm%209.docx)
 
 ## Results
 
