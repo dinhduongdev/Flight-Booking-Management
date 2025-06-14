@@ -20,7 +20,7 @@ The Flight Management System is a web application designed to manage flight rese
 
 ## Features
 
-- Signup, login with google oauth
+- Signup, login with google oauth.
 - Randomize avatar for new users (Cloudinary)
 - Reset password with token-based email verification
 - Search for flights based on routes and dates
